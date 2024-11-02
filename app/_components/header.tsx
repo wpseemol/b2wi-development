@@ -1,3 +1,4 @@
+import NavMenu from './nav-menu';
 import TopContactInfo from './top-contact-info';
 import TopMenu from './top-menu';
 
@@ -11,14 +12,8 @@ export default function Header() {
                 <TopContactInfo />
             </section>
 
-            <section className="bg-gradient-to-r from-cyan-500 to-blue-500 border-y py-5">
-                <nav className="container mx-auto ">
-                    <ul className="flex gap-3 justify-center">
-                        <li>link1</li>
-                        <li>link2</li>
-                        <li>link3</li>
-                    </ul>
-                </nav>
+            <section className="bg-gradient-to-r from-[#2d3544] to-[#0165ac] border-y py-5 dark:bg-gradient-to-r dark:from-[#224a94] dark:to-[#17174b]">
+                <NavMenu />
             </section>
         </header>
     );
