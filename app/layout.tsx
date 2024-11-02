@@ -1,5 +1,6 @@
 import Footer from '@/app/_components/footer';
 import Header from '@/app/_components/header';
+
 import Providers from '@/components/providers';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
@@ -18,7 +19,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="light">
+        <html lang="en" className="light" style={{ colorScheme: 'light' }}>
             <body
                 className={`${poppins.className} antialiased`}
                 suppressHydrationWarning={true}>

@@ -1,3 +1,4 @@
+'use client';
 import { ThemeProvider } from './ui/theme-provider';
 
 export default function Providers({
@@ -9,7 +10,7 @@ export default function Providers({
         <>
             <ThemeProvider
                 attribute="class"
-                defaultTheme="system"
+                defaultTheme="light"
                 enableSystem
                 disableTransitionOnChange>
                 {children}
