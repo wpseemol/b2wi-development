@@ -8,7 +8,7 @@ export default function TopMenu() {
     return (
         <>
             <div
-                className="mx-auto container flex justify-between items-center my-3 text-fontColor/85 dark:text-neutral-100
+                className="mx-auto container flex justify-between items-center my-3 text-fontColor/85 dark:text-neutral-100/80
                  ">
                 <div className="flex justify-start items-center gap-5 text-lg">
                     {/* Social icons */}

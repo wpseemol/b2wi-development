@@ -12,8 +12,6 @@ export default function TopContactInfo() {
                         width={200}
                         height={150}
                         className="w-auto h-auto"
-                        as="image"
-                        priority
                     />
                 </Link>
             </section>
@@ -25,8 +23,6 @@ export default function TopContactInfo() {
                         width={200}
                         height={150}
                         className="w-auto h-auto"
-                        as="image"
-                        priority
                     />
                 </Link>
             </section>
