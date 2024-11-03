@@ -1,9 +1,121 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { FaFacebookSquare, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { PiInstagramLogoLight } from 'react-icons/pi';
+import EmailSendButton from './email-send-input';
 
 export default function Footer() {
     return (
-        <footer className="bg-primaryColor text-white pt-5">
-            <section></section>
+        <footer className="bg-[#023153] dark:bg-[#02223a] text-white">
+            <section className="container mx-auto flex justify-around items-start gap-4 py-14">
+                {/* site inform */}
+
+                <div className="w-1/4 px-5">
+                    <figure className="py-5">
+                        <Image
+                            src="/images/footer.png"
+                            alt="footer site logo"
+                            width={200}
+                            height={150}
+                            className="md:w-auto md:h-auto w-32 h-14"
+                        />
+                    </figure>
+                    <p className="text-base font-extralight">
+                        Join Empower Minds and transform your future with our
+                        holistic services and unwavering commitment to your
+                        success.
+                    </p>
+
+                    <div className="mt-3">
+                        <h2 className="text-2xl font-medium ">Follow Us</h2>
+                        <div className="flex items-center gap-5 text-lg mt-1 text-neutral-100/80">
+                            <Link
+                                href="#"
+                                className="hover:text-neutral-50 duration-100 hover:scale-105">
+                                <FaFacebookSquare />
+                            </Link>
+                            <Link
+                                href="#"
+                                className="hover:text-neutral-50 duration-100 hover:scale-105">
+                                <PiInstagramLogoLight />
+                            </Link>
+                            <Link
+                                href="#"
+                                className="hover:text-neutral-50 duration-100 hover:scale-105">
+                                <FaLinkedinIn />
+                            </Link>
+                            <Link
+                                href="#"
+                                className="hover:text-neutral-50 duration-100 hover:scale-105">
+                                <FaYoutube />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                {/* site inform */}
+                {/* some link */}
+                <div className="w-1/4 px-5">
+                    <h2 className="text-2xl font-medium border-l-4 border-primaryColor pl-3 mb-5">
+                        Our Partners
+                    </h2>
+                    <ul className="space-y-2 capitalize">
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">BePro</Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">GEE</Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">FLY8</Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">Our teem</Link>
+                        </li>
+                    </ul>
+                </div>
+                {/* some link */}
+
+                {/* Quick Links */}
+                <div className="w-1/4 px-5">
+                    <h2 className="text-2xl font-medium border-l-4 border-primaryColor pl-3 mb-5">
+                        Quick Links
+                    </h2>
+                    <ul className="space-y-2 capitalize">
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">About Us </Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">FAQs </Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">Privacy Policy</Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">How do we help</Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">People behind</Link>
+                        </li>
+                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                            <Link href="#">Success story</Link>
+                        </li>
+                    </ul>
+                </div>
+                {/* Quick Links */}
+
+                {/* Quick Links */}
+                <div className="w-1/4 px-5">
+                    <div>
+                        <h2 className="text-2xl font-medium border-l-4 border-primaryColor pl-3 mb-5">
+                            Become a part of our groups
+                        </h2>
+                        <div>
+                            <EmailSendButton />
+                        </div>
+                    </div>
+                </div>
+                {/* Quick Links */}
+            </section>
 
             <section className="bg-white">
                 <figure className="mx-auto w-fit">
