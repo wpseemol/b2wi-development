@@ -5,10 +5,10 @@ import TopMenu from './top-menu';
 export default function Header() {
     return (
         <header>
-            <section className="border-b relative z-10">
+            <section className="border-b relative z-10 bg-white dark:bg-[#030712]">
                 <TopMenu />
             </section>
-            <section className="container mx-auto md:hover:py-3 -my-1 duration-150 px-2 md:px-3 md:bg-transparent bg-slate-50 dark:bg-slate-900">
+            <section className=" md:hover:py-3 -my-1 duration-150 bg-slate-50 dark:bg-slate-900">
                 <TopContactInfo />
             </section>
 
