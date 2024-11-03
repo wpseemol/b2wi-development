@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { GoMail } from 'react-icons/go';
 import { PiPhoneCallLight } from 'react-icons/pi';
 import { TfiLocationPin } from 'react-icons/tfi';
+import MobileNavMenu from './mobile-nav-menu';
 
 export default function TopContactInfo() {
     return (
-        <div className="flex justify-between items-center">
+        <div className="flex md:justify-between justify-around items-center relative">
             <section className="dark:hidden">
                 <Link href="/">
                     <Image
@@ -14,7 +15,7 @@ export default function TopContactInfo() {
                         alt="site logo"
                         width={200}
                         height={150}
-                        className="w-auto h-auto"
+                        className="md:w-auto md:h-auto w-32 h-14"
                     />
                 </Link>
             </section>
@@ -25,11 +26,11 @@ export default function TopContactInfo() {
                         alt="site logo"
                         width={200}
                         height={150}
-                        className="w-auto h-auto"
+                        className="md:w-auto md:h-auto w-32 h-14"
                     />
                 </Link>
             </section>
-            <ul className="flex justify-end items-center gap-4">
+            <ul className="md:flex justify-end items-center gap-4 hidden">
                 <li>
                     <Link
                         href={`tel:${+8801685456708}`}
@@ -76,6 +77,10 @@ export default function TopContactInfo() {
                     </Link>
                 </li>
             </ul>
+            {/* menu button section  */}
+            <section className="md:hidden ">
+                <MobileNavMenu />
+            </section>
         </div>
     );
 }

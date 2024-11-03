@@ -5,14 +5,14 @@ import TopMenu from './top-menu';
 export default function Header() {
     return (
         <header>
-            <section className="border-b">
+            <section className="border-b relative z-10">
                 <TopMenu />
             </section>
-            <section className="container mx-auto hover:py-3 -my-1 duration-150">
+            <section className="container mx-auto md:hover:py-3 -my-1 duration-150 px-2 md:px-3 md:bg-transparent bg-slate-50 dark:bg-slate-900">
                 <TopContactInfo />
             </section>
 
-            <section className="bg-gradient-to-r from-[#2d3544] to-[#0165ac] border-y py-5 dark:bg-gradient-to-r dark:from-[#224a94] dark:to-[#17174b]">
+            <section className="bg-gradient-to-r from-[#2d3544] to-[#0165ac] border-y md:py-5 py-4 dark:bg-gradient-to-r dark:from-[#224a94] dark:to-[#17174b] md:px-3 px-2">
                 <NavMenu />
             </section>
         </header>
