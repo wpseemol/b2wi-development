@@ -1,5 +1,5 @@
 import Footer from '@/app/_components/footer';
-import Header from '@/app/_components/header';
+import Header from '@/app/_components/header/header';
 
 import Providers from '@/components/providers';
 import type { Metadata } from 'next';

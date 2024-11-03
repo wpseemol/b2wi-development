@@ -28,7 +28,7 @@ export default function MobileNavMenu() {
                     nevMenus.map((menu) => (
                         <li
                             key={menu.slug}
-                            className="pl-3 border-b hover:translate-x-3 duration-150">
+                            className="pl-3 border-b hover:translate-x-3 duration-150 py-2">
                             <MyLink
                                 href={menu.slug}
                                 className="hover:text-primaryColor"
