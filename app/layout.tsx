@@ -1,4 +1,4 @@
-import Footer from '@/app/_components/footer';
+import Footer from '@/app/_components/footer/footer';
 import Header from '@/app/_components/header/header';
 
 import Providers from '@/components/providers';
