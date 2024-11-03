@@ -4,7 +4,7 @@ import { FaTelegramPlane } from 'react-icons/fa';
 
 export default function EmailSendButton() {
     return (
-        <div className="flex w-full max-w-sm items-center space-x-2">
+        <div className="flex w-full max-w-sm items-center space-x-2 mx-auto md:mx-0">
             <Input
                 type="email"
                 placeholder="Enter Email Address"
