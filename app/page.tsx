@@ -5,6 +5,7 @@ import NewSection from './_components/main/news-section';
 import OurSkillSection from './_components/main/our-skills-section';
 import ProjectDoneNumbering from './_components/main/project-done-numbering';
 import ProjectSection from './_components/main/project-section';
+import TestimonialsSection from './_components/main/testimonials-section';
 
 export default function HomePage() {
     return (
@@ -15,6 +16,7 @@ export default function HomePage() {
             <ProjectSection />
             <ProjectDoneNumbering />
             <OurSkillSection />
+            <TestimonialsSection />
             <NewSection />
         </main>
     );

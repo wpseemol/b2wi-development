@@ -10,6 +10,7 @@ export default function OurSkillSection() {
                 <p className="text-center text-neutral-700/85 font-medium text-base">
                     Elevate your skills with career guidance from our experts
                 </p>
+
                 <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-5">
                     {skills.map((skill) => (
                         <div
