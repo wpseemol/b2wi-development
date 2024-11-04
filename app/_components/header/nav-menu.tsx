@@ -10,7 +10,7 @@ export default function NavMenu() {
                     {nevMenus.map((menu) => {
                         return (
                             <li
-                                key={menu.slug}
+                                key={menu.id}
                                 className={`hover:text-primaryColor ${
                                     menu.subMenu ? 'relative group' : ''
                                 }`}>
@@ -23,7 +23,7 @@ export default function NavMenu() {
                                         <ul className="absolute top-7 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 shadow-xl rounded-b-md overflow-hidden h-0 pt-0 group-hover:h-fit group-hover:pt-2 group-hover:border group-hover:opacity-100 duration-200">
                                             {subMenu.map((menu) => (
                                                 <li
-                                                    key={menu.slug}
+                                                    key={menu.id}
                                                     className="pl-2 pr-5 border-b w-full text-nowrap hover:translate-x-1 duration-100 hover:text-primaryColor text-left">
                                                     <MyLink
                                                         href={menu.slug}
@@ -58,20 +58,21 @@ export default function NavMenu() {
 }
 
 export const nevMenus: MenuItem[] = [
-    { slug: '/', name: 'Home' },
-    { slug: '#', name: 'Hacks' },
-    { slug: '#', name: 'Service', subMenu: true },
-    { slug: '#', name: 'Scholarships' },
-    { slug: '#', name: 'Assessment' },
-    { slug: '#', name: 'About Us' },
+    { id: 1, slug: '/', name: 'Home' },
+    { id: 2, slug: '#', name: 'Hacks' },
+    { id: 3, slug: '#', name: 'Service', subMenu: true },
+    { id: 4, slug: '#', name: 'Scholarships' },
+    { id: 5, slug: '#', name: 'Assessment' },
+    { id: 6, slug: '#', name: 'About Us' },
 ];
 
 export const subMenu: MenuItem[] = [
     {
+        id: 1,
         slug: '#',
         name: 'How Do We Help',
     },
-    { slug: '#', name: 'People Behind' },
-    { slug: '#', name: 'Success Stories' },
-    { slug: '#', name: 'Media Coverage' },
+    { id: 2, slug: '#', name: 'People Behind' },
+    { id: 3, slug: '#', name: 'Success Stories' },
+    { id: 4, slug: '#', name: 'Media Coverage' },
 ];
