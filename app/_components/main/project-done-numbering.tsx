@@ -12,7 +12,7 @@ export default function ProjectDoneNumbering() {
                             <CountupAnimation wNumber={work.wNumber} />
                             {work.symbol}
                         </h2>
-                        <h3 className="text-neutral-700/85 text-lg font-medium">
+                        <h3 className="text-neutral-700/85 dark:text-neutral-100/80 text-lg font-medium">
                             {work.title}
                         </h3>
                     </div>

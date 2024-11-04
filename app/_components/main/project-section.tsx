@@ -47,13 +47,13 @@ export default function ProjectSection() {
                     <Button
                         size="lg"
                         variant="default"
-                        className="bg-primaryColor/80 h-12 hover:bg-primaryColor/85 mx-auto w-fit">
+                        className="bg-primaryColor/80 h-12 hover:bg-primaryColor/85 mx-auto w-fit dark:text-neutral-100/80 text-neutral-100">
                         Talk to an Expert
                     </Button>
                     <Button
                         size="lg"
                         variant="outline"
-                        className="border-primaryColor h-12 hover:bg-[#005694] hover:text-neutral-50">
+                        className="border-primaryColor h-12 hover:bg-[#005694] hover:text-neutral-100/80">
                         Training Programs
                     </Button>
                 </div>
