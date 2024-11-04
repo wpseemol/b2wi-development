@@ -14,11 +14,6 @@ export default function TestimonialSlider() {
             autoplay: 7500,
             animationDuration: 700,
             gap: 24,
-            classNames: {
-                nav: {
-                    active: '[&>*]:bg-wuiSlate-700',
-                },
-            },
             breakpoints: {
                 1024: {
                     perView: 2,
