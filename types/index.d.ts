@@ -6,3 +6,9 @@ export type MyLinkType = {
     children: React.ReactNode;
     activeClassName?: string;
 };
+
+export type BrandImages = {
+    id: number;
+    url: string;
+    name: string;
+};
