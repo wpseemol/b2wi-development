@@ -14,7 +14,9 @@ export default function TestimonialsSection() {
                     A deep commitment to diversity and inclusion
                 </p>
             </div>
-            <TestimonialSlider />
+            <div className="relative max-h-[350px]">
+                <TestimonialSlider />
+            </div>
         </section>
     );
 }

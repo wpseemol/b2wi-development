@@ -1,16 +1,17 @@
 'use client';
 import { testimonials } from '@/lib/testimonial-data';
 import Glide from '@glidejs/glide';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import TestimonialContent from './testimonial-content';
 
 export default function TestimonialSlider() {
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         const slider = new Glide('.glide-04', {
             type: 'carousel',
             focusAt: 0,
             perView: 2,
-            autoplay: 6500,
+            autoplay: 7500,
             animationDuration: 700,
             gap: 24,
             classNames: {
@@ -28,6 +29,8 @@ export default function TestimonialSlider() {
             },
         }).mount();
 
+        setLoading(false);
+
         return () => {
             slider.destroy();
         };
@@ -36,7 +39,15 @@ export default function TestimonialSlider() {
     return (
         <>
             {/*<!-- Component: Carousel with controls outside --> */}
-            <div className="glide-04 relative w-full">
+            {loading && (
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <p>loading...</p>
+                </div>
+            )}
+            <div
+                className={`glide-04 relative w-full ${
+                    loading ? 'opacity-0' : ''
+                }`}>
                 {/*    <!-- Controls --> */}
                 <div
                     className="flex w-full items-center justify-end gap-2 p-4"

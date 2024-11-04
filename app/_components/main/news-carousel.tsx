@@ -7,8 +7,10 @@ import { FaTags } from 'react-icons/fa6';
 
 export default function NewsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        setLoading(false);
         const slider = new Glide('.glide-05', {
             type: 'carousel',
             focusAt: 0,
@@ -45,9 +47,16 @@ export default function NewsCarousel() {
     }, []);
 
     return (
-        <>
-            {/*<!-- Component: Carousel with indicators outside --> */}
-            <div className="glide-05 relative w-full">
+        <div className="relative">
+            {loading && (
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <p className="text-xl">loading...</p>
+                </div>
+            )}
+            <div
+                className={`glide-05 relative w-full ${
+                    loading ? 'opacity-0' : ''
+                }`}>
                 {/* Slides */}
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
@@ -100,6 +109,6 @@ export default function NewsCarousel() {
                 </div>
             </div>
             {/*<!-- End Carousel with indicators outside --> */}
-        </>
+        </div>
     );
 }
