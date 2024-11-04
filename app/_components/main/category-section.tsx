@@ -11,7 +11,7 @@ export default function CategorySection() {
                     <span className="group-hover:scale-105 duration-150 w-[5rem] h-[5rem]">
                         <ResearchAssistance />
                     </span>
-                    <h2 className="text-center font-semibold text-neutral-800/70 w-60">
+                    <h2 className="text-center font-semibold text-neutral-800/70 dark:text-neutral-50/75 w-60">
                         University Research <br /> Assistance
                     </h2>
                 </div>
@@ -20,7 +20,7 @@ export default function CategorySection() {
                     <span className="group-hover:scale-105 duration-150 w-[5rem] h-[5rem] flex justify-center items-center">
                         <ImProfile className="text-5xl text-[#087bceb3]" />
                     </span>
-                    <h2 className="text-center font-semibold text-neutral-800/70 w-60">
+                    <h2 className="text-center font-semibold text-neutral-800/70 dark:text-neutral-50/75 w-60">
                         Profile Assessment
                     </h2>
                 </div>
@@ -28,7 +28,7 @@ export default function CategorySection() {
                     <span className="group-hover:scale-105 duration-150 w-[5rem] h-[5rem] flex justify-center items-center">
                         <GiFamilyHouse className="text-5xl text-[#087bceb3]" />
                     </span>
-                    <h2 className="text-center font-semibold text-neutral-800/70 w-60">
+                    <h2 className="text-center font-semibold text-neutral-800/70 dark:text-neutral-50/75 w-60">
                         Accommodation Assistance
                     </h2>
                 </div>
@@ -36,7 +36,7 @@ export default function CategorySection() {
                     <span className="group-hover:scale-105 duration-150 w-[5rem] h-[5rem] flex justify-center items-center">
                         <CgPlayListSearch className="text-5xl text-[#087bceb3]" />
                     </span>
-                    <h2 className="text-center font-semibold text-neutral-800/70 w-60">
+                    <h2 className="text-center font-semibold text-neutral-800/70 dark:text-neutral-50/75 w-60">
                         SOP Review
                     </h2>
                 </div>
