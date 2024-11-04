@@ -1,7 +1,7 @@
 import { BrandImages } from '@/types/main';
 import Image from 'next/image';
-import BardSvg from './bard-svg';
-import PointerIcon from './pointer-icon';
+import BardSvg from '../../../components/svg/bard-svg';
+import PointerIcon from '../../../components/svg/pointer-icon';
 
 export default function BrandingSection() {
     return (

@@ -1,5 +1,5 @@
+import TickIcon from '../../../components/svg/tik-icon';
 import ScheduleCall from './schedule-call';
-import TickIcon from './tik-icon';
 
 export default function HeroSection() {
     return (
