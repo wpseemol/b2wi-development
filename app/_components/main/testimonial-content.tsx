@@ -12,7 +12,7 @@ export default function TestimonialContent({
     return (
         <>
             {/*      <!-- Component: Elevated simple base sized testimonial --> */}
-            <div className="overflow-hidden bg-white rounded shadow-2xl text-slate-500 shadow-slate-200">
+            <div className="overflow-hidden bg-white dark:bg-transparent rounded shadow-2xl text-slate-500 shadow-slate-200 dark:shadow-black border border-neutral-300/20">
                 <div className="relative p-6">
                     <figure className="relative z-10">
                         <blockquote className="p-6 text-lg leading-relaxed">

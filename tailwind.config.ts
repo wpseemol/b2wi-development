@@ -10,6 +10,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                'alex-brush': ['"Alex Brush"', 'sans-serif'],
+            },
             backgroundImage: {
                 'hero-pattern': "url('/images/Home-Banner.png')",
             },

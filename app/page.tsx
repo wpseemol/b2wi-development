@@ -1,5 +1,6 @@
 import BrandingSection from './_components/main/branding-section';
 import CategorySection from './_components/main/category-section';
+import EventWorkshop from './_components/main/event-workshops';
 import HeroSection from './_components/main/hero-section';
 import NewSection from './_components/main/news-section';
 import OurSkillSection from './_components/main/our-skills-section';
@@ -17,6 +18,7 @@ export default function HomePage() {
             <ProjectDoneNumbering />
             <OurSkillSection />
             <TestimonialsSection />
+            <EventWorkshop />
             <NewSection />
         </main>
     );

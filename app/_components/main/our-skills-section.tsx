@@ -11,11 +11,11 @@ export default function OurSkillSection() {
                     Elevate your skills with career guidance from our experts
                 </p>
 
-                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-5">
+                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-5 mt-10">
                     {skills.map((skill) => (
                         <div
                             key={skill.id}
-                            className="w-full md:h-[300px] h-[230px] rounded-2xl"
+                            className="w-full md:h-[300px] h-[230px] rounded-2xl hover:scale-[1.01] duration-150"
                             style={{
                                 backgroundImage: `url('/images/skills/${skill.imgUrl}')`,
                                 backgroundSize: 'cover',

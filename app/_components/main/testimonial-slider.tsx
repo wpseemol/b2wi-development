@@ -53,7 +53,7 @@ export default function TestimonialSlider() {
                     className="flex w-full items-center justify-end gap-2 p-4"
                     data-glide-el="controls">
                     <button
-                        className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+                        className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 dark:text-white focus-visible:outline-none lg:h-12 lg:w-12"
                         data-glide-dir="<"
                         aria-label="prev slide">
                         <svg
@@ -72,7 +72,7 @@ export default function TestimonialSlider() {
                         </svg>
                     </button>
                     <button
-                        className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 focus-visible:outline-none lg:h-12 lg:w-12"
+                        className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700 bg-white/20 text-slate-700 transition duration-300 hover:border-slate-900 hover:text-slate-900 dark:text-white focus-visible:outline-none lg:h-12 lg:w-12"
                         data-glide-dir=">"
                         aria-label="next slide">
                         <svg
