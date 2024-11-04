@@ -21,7 +21,7 @@ export default function BrandingSection() {
                     </span>
                 </div>
             </div>
-            <div className=" min-h-[140px] md:w-1/2 bg-[#5d5d5d27] dark:bg-transparent flex items-center md:flex-row flex-col justify-center md:justify-normal">
+            <div className=" min-h-[140px] md:w-1/2 bg-[#b1aaaa27] dark:bg-[#9e9ea1] flex items-center md:flex-row flex-col justify-center md:justify-normal">
                 <div className="flex items-center md:justify-evenly justify-center gap-10 w-full">
                     {brandImages.map((bImage) => (
                         <figure
