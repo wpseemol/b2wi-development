@@ -1,4 +1,4 @@
-import { BrandImages } from '@/types';
+import { BrandImages } from '@/types/main';
 import Image from 'next/image';
 import BardSvg from './bard-svg';
 import PointerIcon from './pointer-icon';

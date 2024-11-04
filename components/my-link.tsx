@@ -1,5 +1,5 @@
 'use client';
-import { MyLinkType } from '@/types';
+import { MyLinkType } from '@/types/main';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

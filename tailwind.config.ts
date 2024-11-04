@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 const config: Config = {
     darkMode: ['class'],
@@ -9,6 +10,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            backgroundImage: {
+                'hero-pattern': "url('/images/Home-Banner.png')",
+            },
             colors: {
                 primaryColor: '#0070c0',
                 fontColor: '#181818',
@@ -61,7 +65,6 @@ const config: Config = {
         },
     },
 
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    plugins: [require('tailwindcss-animate')],
+    plugins: [tailwindcssAnimate],
 };
 export default config;
