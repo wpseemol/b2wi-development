@@ -2,7 +2,7 @@ import CountupAnimation from './countup-animation';
 
 export default function ProjectDoneNumbering() {
     return (
-        <section className="container mx-auto md:px-2 px-3 py-10">
+        <section className="container mx-auto md:px-2 px-3 md:mb-14 mb-8">
             <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-1">
                 {numberWorks.map((work) => (
                     <div

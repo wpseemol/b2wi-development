@@ -5,7 +5,7 @@ export default function ProjectSection() {
     return (
         <section
             className="container mx-auto md:px-2 px-3 flex 
-        justify-center items-center lg:flex-nowrap flex-wrap md:gap-10 gap-5 py-10">
+        justify-center items-center lg:flex-nowrap flex-wrap md:gap-10 gap-5 md:mb-14 mb-8">
             <div className="md:w-1/2 flex justify-end">
                 <figure className="xl:w-[36rem]">
                     <Image

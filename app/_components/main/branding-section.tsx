@@ -5,7 +5,7 @@ import PointerIcon from '../../../components/svg/pointer-icon';
 
 export default function BrandingSection() {
     return (
-        <section className="flex justify-center md:flex-row flex-col">
+        <section className="flex justify-center md:flex-row flex-col md:mb-14 mb-8">
             <div className=" min-h-[140px] bg-primaryColor dark:bg-[#023153] md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative">
                 <div className="flex md:justify-end gap-1 justify-center w-full">
                     <span className="w-5 h-5 mt-1">

@@ -3,7 +3,7 @@ import ScheduleCall from './schedule-call';
 
 export default function HeroSection() {
     return (
-        <section className="bg-hero-pattern bg-right-top bg-no-repeat bg-cover bg-[#8a3f3fb2] -mt-1 ">
+        <section className="bg-hero-pattern bg-right-top bg-no-repeat bg-cover bg-[#8a3f3fb2] -mt-1">
             <div className="w-full min-h-[750px] bg-neutral-900/45">
                 <div className="container mx-auto md:px-2 px-3 text-white flex flex-col justify-center gap-3 min-h-[750px]">
                     <h3 className="text-2xl font-semibold">

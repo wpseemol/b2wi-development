@@ -85,7 +85,7 @@ export default function NewsCarousel() {
                 <div
                     className="flex w-full items-center justify-center gap-2 mt-4"
                     data-glide-el="controls[nav]">
-                    {[0, 1, 2, 3, 4, 5, 6].map((index) => (
+                    {newData.map((data, index) => (
                         <button
                             key={index}
                             className={`group p-2 `}
