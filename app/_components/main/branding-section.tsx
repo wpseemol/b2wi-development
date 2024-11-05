@@ -6,7 +6,7 @@ import PointerIcon from '../../../components/svg/pointer-icon';
 export default function BrandingSection() {
     return (
         <section className="flex justify-center md:flex-row flex-col md:mb-16 mb-8">
-            <div className=" min-h-[140px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative">
+            <div className=" min-h-[150px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative">
                 <div className="flex md:justify-end gap-3 justify-center w-full md:pl-0 pl-2">
                     <span className="w-5 h-5 mt-1 ">
                         <PointerIcon />
@@ -45,13 +45,13 @@ export default function BrandingSection() {
 const brandImages: BrandImages[] = [
     {
         id: 1,
-        url: 'IITM-Research-Park-Logo-1024x877.png',
-        name: 'IITM-Research-Park',
+        url: 'brand-1.png',
+        name: 'be pro',
     },
     {
         id: 2,
-        url: 'IIT_Madras_Logo.svg.png',
-        name: 'IIT_Madras_Logo',
+        url: 'brand-2.png',
+        name: 'global education expert',
     },
-    { id: 3, url: 'PSO_BIG-bf5a6ba8-1024x308.png', name: 'BIG-bf5a6ba8' },
+    { id: 3, url: 'brand-3.png', name: 'edu' },
 ];
