@@ -1,22 +1,22 @@
+import WorldIcon from '@/components/svg/world-icon';
 import { BrandImages } from '@/types/main';
 import Image from 'next/image';
-import BardSvg from '../../../components/svg/bard-svg';
 import PointerIcon from '../../../components/svg/pointer-icon';
 
 export default function BrandingSection() {
     return (
         <section className="flex justify-center md:flex-row flex-col md:mb-16 mb-8">
-            <div className=" min-h-[140px] bg-primaryColor dark:bg-[#023153] md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative">
-                <div className="flex md:justify-end gap-1 justify-center w-full">
-                    <span className="w-5 h-5 mt-1">
+            <div className=" min-h-[140px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative">
+                <div className="flex md:justify-end gap-3 justify-center w-full md:pl-0 pl-2">
+                    <span className="w-5 h-5 mt-1 ">
                         <PointerIcon />
                     </span>
-                    <p className="md:text-[18px] md:font-semibold font-medium text-white">
-                        In Collaboration with top-tiered training professionals
-                        throughout <br /> global training industry
+                    <p className="md:text-[18px] md:font-semibold font-medium text-white relative z-10">
+                        In collaboration with top-tiered consultants in study
+                        abroad industry.
                     </p>
-                    <span className=" w-[70px] absolute bottom-2 right-5 ">
-                        <BardSvg />
+                    <span className=" absolute bottom-2 right-8 ">
+                        <WorldIcon />
                         <span className="absolute top-0 left-0  w-full h-full bg-primaryColor/55"></span>
                     </span>
                 </div>

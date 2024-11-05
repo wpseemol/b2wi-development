@@ -8,12 +8,12 @@ export default function NavMenu() {
         <div>
             <nav className="container mx-auto flex justify-between items-center">
                 {/* menu button  */}
-                <section className="lg:hidden md:block hidden ">
+                <section className="xl:hidden md:block hidden ">
                     <MobileNavMenu />
                 </section>
                 {/* menu button  */}
 
-                <ul className="lg:flex 2xl:gap-3 gap-2 items-center text-neutral-100 text-[16px] font-medium hidden lg:tracking-tighter 2xl:tracking-normal">
+                <ul className="xl:flex 2xl:gap-3 gap-2 items-center text-neutral-100 text-[16px] font-medium hidden lg:tracking-tighter 2xl:tracking-normal">
                     {nevMenus.map((menu) => {
                         return (
                             <li

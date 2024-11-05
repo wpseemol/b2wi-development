@@ -1,6 +1,9 @@
 export default function BardSvg() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.66 39.98">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-12"
+            viewBox="0 0 47.66 39.98">
             <defs>
                 <style>{'.cls-1{fill:#fff;}'}</style>
             </defs>
