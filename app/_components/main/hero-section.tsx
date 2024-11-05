@@ -6,7 +6,7 @@ export default function HeroSection() {
                     {/* <h3 className="text-2xl font-semibold">
                         Ignite Your Potential with
                     </h3> */}
-                    <h2 className="text-6xl font-semibold">
+                    <h2 className="sm:text-6xl text-4xl font-semibold">
                         Bangladeshi Talent.
                         <br /> Global Aspiration.
                     </h2>
