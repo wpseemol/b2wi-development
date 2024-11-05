@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { FaFacebookSquare, FaRegUser, FaYoutube } from 'react-icons/fa';
-import { FaCartShopping, FaLinkedinIn } from 'react-icons/fa6';
+import { FaFacebookSquare, FaYoutube } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa6';
 import { PiInstagramLogoLight } from 'react-icons/pi';
 import { ModeToggle } from './mode-toggle';
 
@@ -13,6 +13,8 @@ export default function TopMenu() {
                  ">
                 {/* more link */}
                 <div className="flex md:gap-5 gap-3 justify-end items-center text-base">
+                    <ModeToggle />
+
                     {/* Social icons */}
                     <Link
                         href="#"
@@ -35,19 +37,6 @@ export default function TopMenu() {
                         <FaYoutube />
                     </Link>
                     {/* Social icons */}
-
-                    <ModeToggle />
-
-                    <Link
-                        href="#"
-                        className="hover:text-primaryColor duration-100 text-lg hover:scale-105">
-                        <FaCartShopping />
-                    </Link>
-                    <Link
-                        href="#"
-                        className="hover:text-primaryColor duration-100 text-lg hover:scale-105">
-                        <FaRegUser />
-                    </Link>
                 </div>
             </div>
         </>

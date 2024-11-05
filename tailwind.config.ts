@@ -21,7 +21,7 @@ const config: Config = {
                 'alex-brush': ['"Alex Brush"', 'sans-serif'],
             },
             backgroundImage: {
-                'hero-pattern': "url('/images/Home-Banner.png')",
+                'hero-pattern': "url('/images/1.png')",
             },
             colors: {
                 primaryColor: '#0070c0',
