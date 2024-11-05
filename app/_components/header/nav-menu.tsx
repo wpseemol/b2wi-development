@@ -1,17 +1,24 @@
 import MyLink from '@/components/my-link';
 import { MenuItem } from '@/types/nav-menu';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import MobileNavMenu from './mobile-nav-menu';
 
 export default function NavMenu() {
     return (
         <div>
             <nav className="container mx-auto flex justify-between items-center">
-                <ul className="md:flex gap-4 items-center text-neutral-100 text-lg hidden">
+                {/* menu button  */}
+                <section className="md:block hidden ">
+                    <MobileNavMenu />
+                </section>
+                {/* menu button  */}
+
+                <ul className="lg:flex gap-4 items-center text-neutral-100 text-[16px] font-medium hidden">
                     {nevMenus.map((menu) => {
                         return (
                             <li
                                 key={menu.id}
-                                className={`hover:text-primaryColor ${
+                                className={`hover:text-[#5e9dca] ${
                                     menu.subMenu ? 'relative group' : ''
                                 }`}>
                                 {menu.subMenu ? (
@@ -24,10 +31,10 @@ export default function NavMenu() {
                                             {subMenu.map((menu) => (
                                                 <li
                                                     key={menu.id}
-                                                    className="pl-2 pr-5 border-b w-full text-nowrap hover:translate-x-1 duration-100 hover:text-primaryColor text-left">
+                                                    className="pl-2 pr-5 border-b w-full text-nowrap hover:translate-x-1 duration-100 hover:text-[#5e9dca] text-left">
                                                     <MyLink
-                                                        href={menu.slug}
-                                                        activeClassName="text-primaryColor">
+                                                        href={menu.id}
+                                                        activeClassName="text-[#5e9dca]">
                                                         {menu.name}
                                                     </MyLink>
                                                 </li>
@@ -37,7 +44,8 @@ export default function NavMenu() {
                                 ) : (
                                     <MyLink
                                         href={menu.slug}
-                                        activeClassName="text-primaryColor">
+                                        activeClassName="text-[#5e9dca]"
+                                        className="">
                                         {menu.name}
                                     </MyLink>
                                 )}
@@ -59,11 +67,15 @@ export default function NavMenu() {
 
 export const nevMenus: MenuItem[] = [
     { id: 1, slug: '/', name: 'Home' },
-    { id: 2, slug: '#', name: 'Hacks' },
-    { id: 3, slug: '#', name: 'Service', subMenu: true },
-    { id: 4, slug: '#', name: 'Scholarships' },
-    { id: 5, slug: '#', name: 'Assessment' },
-    { id: 6, slug: '#', name: 'About Us' },
+    { id: 2, slug: '#', name: 'About Us' },
+    { id: 3, slug: '#', name: 'How Do We Help' },
+    { id: 4, slug: '#', name: 'People Behind' },
+    { id: 5, slug: '#', name: 'Success Stories' },
+    { id: 6, slug: '#', name: 'Hacks ' },
+    { id: 7, slug: '#', name: 'Scholarships' },
+    { id: 8, slug: '#', name: 'Assessment' },
+    { id: 9, slug: '#', name: 'Media Coverage' },
+    { id: 10, slug: '#', name: 'Contact' },
 ];
 
 export const subMenu: MenuItem[] = [
