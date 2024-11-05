@@ -33,7 +33,7 @@ export default function NavMenu() {
                                                     key={menu.id}
                                                     className="pl-2 pr-5 border-b w-full text-nowrap hover:translate-x-1 duration-100 hover:text-[#5e9dca] text-left">
                                                     <MyLink
-                                                        href={menu.id}
+                                                        href={menu.slug}
                                                         activeClassName="text-[#5e9dca]">
                                                         {menu.name}
                                                     </MyLink>
