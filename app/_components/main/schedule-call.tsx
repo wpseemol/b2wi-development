@@ -1,5 +1,3 @@
-import { MdPhone } from 'react-icons/md';
-
 export default function ScheduleCall() {
     return (
         <form action="" className="mt-6 mb-2">
@@ -10,11 +8,11 @@ export default function ScheduleCall() {
                     className="rounded-xl focus-visible:outline-none focus-visible:ring-1 md:w-[320px] w-full focus-visible:ring-neutral-800/15 pl-3 text-neutral-800 py-5 bg-white"
                     required
                 />
-                <button
+                {/* <button
                     type="submit"
                     className="flex justify-center items-center bg-primaryColor/70 hover:bg-primaryColor duration-150 px-6 py-4 rounded-xl gap-1 font-medium">
                     <MdPhone className="text-lg" /> Schedule A Call
-                </button>
+                </button> */}
             </div>
         </form>
     );
