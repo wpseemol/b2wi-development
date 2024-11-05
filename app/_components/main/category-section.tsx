@@ -6,7 +6,7 @@ import { ImProfile } from 'react-icons/im';
 export default function CategorySection() {
     return (
         <section className="container mx-auto md:px-0 px-2 md:mb-16 mb-8">
-            <div className="flex flex-wrap justify-center items-center md:gap-8 gap-5">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-5">
                 <div className="group flex flex-col items-center border border-neutral-700/10 px-4 py-7 hover:shadow-md duration-150 rounded h-[12rem]">
                     <span className="group-hover:scale-105 duration-150 w-[5rem] h-[5rem]">
                         <ResearchAssistance />

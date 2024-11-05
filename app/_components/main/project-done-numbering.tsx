@@ -23,14 +23,14 @@ export default function ProjectDoneNumbering() {
 }
 
 const numberWorks: NumberWorks[] = [
-    { id: 1, wNumber: 17, symbol: '+', title: 'Years of Experience' },
-    { id: 2, wNumber: 100, symbol: '+', title: 'Learners & Professionals' },
-    { id: 3, wNumber: 47, symbol: '%', title: 'Trainees are Women' },
-    { id: 4, wNumber: 2, symbol: 'K+', title: 'Free Counseling Sessions' },
-    { id: 5, wNumber: 30, symbol: '+', title: 'Life Coaching Clients' },
-    { id: 6, wNumber: 25, symbol: '+', title: 'Instructors & Mentors' },
-    { id: 7, wNumber: 9, symbol: '', title: 'National Certifications' },
-    { id: 8, wNumber: 3, symbol: '', title: 'Projects with Dev Orgs' },
+    { id: 1, wNumber: 3000, symbol: '+', title: 'University Partnerships' },
+    { id: 2, wNumber: 60, symbol: '+', title: 'Scholarships' },
+    { id: 3, wNumber: 500, symbol: '+', title: 'Free Assessments' },
+    { id: 4, wNumber: 150, symbol: '+', title: 'Hours’ Free Consultation' },
+    // { id: 5, wNumber: 30, symbol: '+', title: 'Life Coaching Clients' },
+    // { id: 6, wNumber: 25, symbol: '+', title: 'Instructors & Mentors' },
+    // { id: 7, wNumber: 9, symbol: '', title: 'National Certifications' },
+    // { id: 8, wNumber: 3, symbol: '', title: 'Projects with Dev Orgs' },
 ];
 
 interface NumberWorks {
