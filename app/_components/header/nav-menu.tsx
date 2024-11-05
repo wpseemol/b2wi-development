@@ -74,5 +74,6 @@ export const subMenu: MenuItem[] = [
     },
     { id: 2, slug: '#', name: 'People Behind' },
     { id: 3, slug: '#', name: 'Success Stories' },
-    { id: 4, slug: '#', name: 'Media Coverage' },
+    { id: 4, slug: '#', name: 'Study Abroad Hacks' },
+    { id: 5, slug: '#', name: 'B2WI In the News' },
 ];
