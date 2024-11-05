@@ -22,6 +22,7 @@ const config: Config = {
             },
             backgroundImage: {
                 'hero-pattern': "url('/images/1.png')",
+                'skill-numbering': "url('/images/Image3@2x.jpg')",
             },
             colors: {
                 primaryColor: '#0070c0',

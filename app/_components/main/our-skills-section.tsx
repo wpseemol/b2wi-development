@@ -3,21 +3,21 @@ export default function OurSkillSection() {
         <section className="container mx-auto md:px-0 px-2 md:mb-16 mb-8">
             <div>
                 <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] mb-5">
-                    Our students develop{' '}
-                    <span className="text-[#0070c0]">insights</span> that drive{' '}
-                    <span className="text-[#0070c0]">impact</span>
+                    Empowering Students with{' '}
+                    <span className="text-[#0070c0]">Global </span> Insights for{' '}
+                    <span className="text-[#0070c0]"> Lasting Impact</span>
                 </h2>
-                <p className="text-center text-neutral-700/85 font-medium text-base">
-                    Elevate your skills with career guidance from our experts
+                <p className="text-center text-neutral-700/85 font-medium text-xl">
+                    Get expert guidance to thrive in global careers
                 </p>
 
-                <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-5 mt-10">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
                     {skills.map((skill) => (
                         <div
                             key={skill.id}
                             className="w-full md:h-[300px] h-[230px] rounded-2xl hover:scale-[1.01] duration-150"
                             style={{
-                                backgroundImage: `url('/images/skills/${skill.imgUrl}')`,
+                                backgroundImage: `url('/images/services/${skill.imgUrl}')`,
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}>
@@ -40,65 +40,65 @@ export default function OurSkillSection() {
 const skills: skills[] = [
     {
         id: 1,
-        imgUrl: '5.-Career.png',
-        title: 'Career Mentoring',
+        imgUrl: 'University Research Assistance 1.png',
+        title: 'University Research Assistance',
     },
     {
         id: 2,
-        imgUrl: '6.-Admission-Preparation-1.png',
-        title: 'Admission Preperation',
+        imgUrl: 'Profile Assessment 2.png',
+        title: 'Profile Assessment',
     },
     {
         id: 3,
-        imgUrl: '7.-Job-Preparation.png',
-        title: 'Job Preparation',
+        imgUrl: 'SOP Review 3.png',
+        title: 'SOP Review ',
     },
     {
         id: 4,
-        imgUrl: '8.-Soft-Hard-Skills.png',
-        title: 'Soft & Hard Skills',
+        imgUrl: 'LOR Review 4.png',
+        title: 'LOR Review ',
     },
     {
         id: 5,
-        imgUrl: '5.-Communicative-English.png',
-        title: 'Communicative English',
+        imgUrl: 'Visa Application Review 5.png',
+        title: 'Visa Application Review ',
     },
     {
         id: 6,
-        imgUrl: '10.-Data-Analysis.png',
-        title: 'Data Analysis',
+        imgUrl: 'Accommodation Assistance 6.png',
+        title: 'Accommodation Assistance',
     },
-    {
-        id: 7,
-        imgUrl: '11.-Startup-Mentoring.png',
-        title: 'Startup Mentoring',
-    },
+    // {
+    //     id: 7,
+    //     imgUrl: '11.-Startup-Mentoring.png',
+    //     title: 'Startup Mentoring',
+    // },
 
-    {
-        id: 8,
-        imgUrl: '12.-HR-Solutions-1.png',
-        title: 'HR Solutions',
-    },
-    {
-        id: 9,
-        imgUrl: '13.-Mental-Health-1.png',
-        title: 'Mental Health',
-    },
-    {
-        id: 10,
-        imgUrl: '14.-Relationship.png',
-        title: 'Relationships',
-    },
-    {
-        id: 11,
-        imgUrl: '15.-Conjugal-Life.png',
-        title: 'Conjugal Life',
-    },
-    {
-        id: 12,
-        imgUrl: '16.-Life-Coach.png',
-        title: 'Life Coach',
-    },
+    // {
+    //     id: 8,
+    //     imgUrl: '12.-HR-Solutions-1.png',
+    //     title: 'HR Solutions',
+    // },
+    // {
+    //     id: 9,
+    //     imgUrl: '13.-Mental-Health-1.png',
+    //     title: 'Mental Health',
+    // },
+    // {
+    //     id: 10,
+    //     imgUrl: '14.-Relationship.png',
+    //     title: 'Relationships',
+    // },
+    // {
+    //     id: 11,
+    //     imgUrl: '15.-Conjugal-Life.png',
+    //     title: 'Conjugal Life',
+    // },
+    // {
+    //     id: 12,
+    //     imgUrl: '16.-Life-Coach.png',
+    //     title: 'Life Coach',
+    // },
 ];
 
 interface skills {
