@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function ProjectSection() {
     return (
         <section
-            className="container mx-auto md:px-2 px-3 flex 
+            className="container mx-auto md:px-0 px-2 flex 
         justify-center items-center lg:flex-nowrap flex-wrap md:gap-10 gap-5 md:mb-16 mb-8">
             <div className="md:w-1/2 flex justify-end">
                 <figure className="xl:w-[36rem]">

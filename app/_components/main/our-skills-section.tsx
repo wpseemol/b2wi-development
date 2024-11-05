@@ -1,6 +1,6 @@
 export default function OurSkillSection() {
     return (
-        <section className="container mx-auto md:px-2 px-2 md:mb-16 mb-8">
+        <section className="container mx-auto md:px-0 px-2 md:mb-16 mb-8">
             <div>
                 <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] mb-5">
                     Our students develop{' '}
