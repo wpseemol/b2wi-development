@@ -23,7 +23,10 @@ const config: Config = {
             backgroundImage: {
                 'hero-pattern': "url('/images/1.png')",
                 'skill-numbering': "url('/images/Image3@2x.jpg')",
+                'custom-gradient':
+                    'linear-gradient(rgb(1 30 51 / 17%) 30%, rgb(86 86 126 / 30%) 35%, rgb(0 63 108) 91%)',
             },
+
             colors: {
                 primaryColor: '#0070c0',
                 fontColor: '#181818',

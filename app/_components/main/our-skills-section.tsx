@@ -22,11 +22,9 @@ export default function OurSkillSection() {
                                 backgroundPosition: 'center',
                             }}>
                             <div
-                                className=" w-full h-full flex items-end justify-center pb-10 text-neutral-100/90 text-2xl font-semibold rounded-2xl"
-                                style={{
-                                    background:
-                                        'linear-gradient(rgb(1 30 51 / 17%) 30%, rgb(86 86 126 / 30%) 35%, rgb(0 63 108) 91%)',
-                                }}>
+                                className=" w-full h-full flex items-end justify-center pb-10 text-neutral-100/90 text-2xl font-semibold rounded-2xl
+                                bg-custom-gradient
+                                ">
                                 <h2 className="text-center">{skill.title}</h2>
                             </div>
                         </div>

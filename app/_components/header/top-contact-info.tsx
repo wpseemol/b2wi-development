@@ -15,7 +15,7 @@ export default function TopContactInfo() {
                         alt="site logo"
                         width={200}
                         height={150}
-                        className="md:w-[180px] md:h-[80px] w-32 h-14 object-cover"
+                        className="md:w-[180px] w-32  object-cover"
                     />
                 </Link>
             </section>
