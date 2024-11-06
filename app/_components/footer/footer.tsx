@@ -14,7 +14,7 @@ export default function Footer() {
                 {/* site inform */}
 
                 <div className="xl:w-[calc(25%-3.5rem)] md:w-1/4 w-full xl:px-5">
-                    <figure className="md:py-5 py-3 md:mx-0 mx-auto w-fit">
+                    <figure className="md:pb-5 pb-3 md:mx-0 mx-auto w-fit -mt-4">
                         <Image
                             src="/images/footer.png"
                             alt="footer site logo"
@@ -24,9 +24,8 @@ export default function Footer() {
                         />
                     </figure>
                     <p className="text-base text-center md:text-left">
-                        Join Empower Minds and transform your future with our
-                        holistic services and unwavering commitment to your
-                        success.
+                        Unlock your potential with Empower Minds—your trusted
+                        partner in turning study abroad dreams into reality.
                     </p>
 
                     <div className="mt-3">
@@ -73,9 +72,6 @@ export default function Footer() {
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
                             <Link href="#">FLY8</Link>
                         </li>
-                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
-                            <Link href="#">Our teem</Link>
-                        </li>
                     </ul>
                 </div>
                 {/* some link */}
@@ -83,7 +79,7 @@ export default function Footer() {
                 {/* Quick Links */}
                 <div className="xl:w-[calc(25%-3.5rem)] md:w-1/4 w-full xl:px-5">
                     <h2 className="text-2xl font-medium border-l-4 border-primaryColor pl-3 md:mb-5 mb-2 w-fit mx-auto md:w-full md:mx-0">
-                        Quick Links
+                        Useful Links
                     </h2>
                     <ul className="space-y-2 capitalize md:text-left text-center">
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
@@ -95,7 +91,7 @@ export default function Footer() {
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
                             <Link href="#">Privacy Policy</Link>
                         </li>
-                        <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
+                        {/* <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
                             <Link href="#">How do we help</Link>
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
@@ -103,7 +99,7 @@ export default function Footer() {
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
                             <Link href="#">Success story</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 {/* Quick Links */}
@@ -112,7 +108,7 @@ export default function Footer() {
                 <div className="xl:w-[calc(25%-3.5rem)] md:w-1/4 w-full xl:px-5">
                     <div>
                         <h2 className="text-2xl font-medium md:mb-5 mb-2 md:text-left text-center">
-                            Become a part of our groups
+                            What are you looking for?
                         </h2>
                         <div>
                             <EmailSendButton />

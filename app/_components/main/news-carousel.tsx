@@ -15,7 +15,7 @@ export default function NewsCarousel() {
             type: 'carousel',
             focusAt: 0,
             perView: 3,
-            autoplay: 3000,
+            autoplay: 4800,
             animationDuration: 700,
             gap: 35,
             breakpoints: {
@@ -69,7 +69,7 @@ export default function NewsCarousel() {
                                     />
                                 </figure>
                                 {/* news cart details */}
-                                <div className="group/subSection mt-3 absolute -bottom-40 group-hover:bottom-0 duration-200 left-0 w-full bg-[#0070c0] rounded-b-lg p-6">
+                                <div className="group/subSection mt-3 absolute -bottom-40 group-hover:bottom-0 duration-200 left-0 w-full bg-[#264d88dc] rounded-b-lg p-6">
                                     <div className="flex items-center gap-1 text-xs mb-3 text-neutral-300/80">
                                         <FaTags /> <h3>{news.publishedBy}</h3>
                                     </div>
