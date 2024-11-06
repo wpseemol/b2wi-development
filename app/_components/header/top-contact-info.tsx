@@ -7,7 +7,7 @@ import MobileNavMenu from './mobile-nav-menu';
 
 export default function TopContactInfo() {
     return (
-        <div className="container mx-auto px-2 md:px-3 flex md:justify-between justify-around items-center relative">
+        <div className="container mx-auto py-2 px-2 md:px-3 flex md:justify-between justify-around items-center relative">
             <section className="dark:hidden">
                 <Link href="/">
                     <Image
@@ -15,7 +15,7 @@ export default function TopContactInfo() {
                         alt="site logo"
                         width={200}
                         height={150}
-                        className="md:w-auto md:h-auto w-32 h-14"
+                        className="md:w-[180px] md:h-[80px] w-32 h-14 object-cover"
                     />
                 </Link>
             </section>

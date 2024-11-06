@@ -67,15 +67,15 @@ export default function NavMenu() {
 
 export const nevMenus: MenuItem[] = [
     { id: 1, slug: '/', name: 'Home' },
-    { id: 2, slug: '#', name: 'About Us' },
-    { id: 3, slug: '#', name: 'How Do We Help' },
-    { id: 4, slug: '#', name: 'People Behind' },
-    { id: 5, slug: '#', name: 'Success Stories' },
-    { id: 6, slug: '#', name: 'Hacks ' },
-    { id: 7, slug: '#', name: 'Scholarships' },
-    { id: 8, slug: '#', name: 'Assessment' },
-    { id: 9, slug: '#', name: 'Media Coverage' },
-    { id: 10, slug: '#', name: 'Contact' },
+    { id: 2, slug: '/about-us', name: 'About Us' },
+    { id: 3, slug: '/how-do-we-hep', name: 'How Do We Help' },
+    { id: 4, slug: '/people-behind', name: 'People Behind' },
+    { id: 5, slug: '/success-stories', name: 'Success Stories' },
+    { id: 6, slug: '/hacks', name: 'Hacks ' },
+    { id: 7, slug: '/scholarships', name: 'Scholarships' },
+    { id: 8, slug: '/assessment', name: 'Assessment' },
+    { id: 9, slug: '/media-coverage', name: 'Media Coverage' },
+    { id: 10, slug: '/contact', name: 'Contact' },
 ];
 
 export const subMenu: MenuItem[] = [
