@@ -1,15 +1,16 @@
 import { Button } from '@/components/ui/button';
+import InsightsCarousel from './insights-carousel';
 
 export default function InsightsSection() {
     return (
-        <section className="md:mb-16 mb-8 bg-primaryColor/55 py-10">
+        <section className="md:mb-16 mb-8 bg-primaryColor/55 dark:bg-[#002641de]  py-10">
             <div className="container mx-auto md:px-0 px-2 py-10 sm:py-7 ">
                 <div className="flex sm:flex-row flex-col justify-between sm:gap-0 gap-3 mb-10">
                     <div>
                         {/* <h3 className="text-2xl text-[#0976c4] font-semibold">
                         Insights & Inspirations
                     </h3> */}
-                        <h2 className="md:text-[40px] text-4xl font-bold text-[#004679]">
+                        <h2 className="md:text-[40px] text-4xl font-bold text-[#004679] dark:text-[#007ad1]">
                             B2WI Insights
                         </h2>
                     </div>
@@ -27,15 +28,8 @@ export default function InsightsSection() {
                         Read all insights
                     </Button>
                 </div>
-                <div>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Repellendus est delectus fugit, ducimus alias
-                        obcaecati facilis hic deserunt. Molestias, fugit animi.
-                        Minus, blanditiis maxime dolores quaerat culpa eum qui
-                        sapiente.
-                    </p>
-                </div>
+
+                <InsightsCarousel />
             </div>
         </section>
     );

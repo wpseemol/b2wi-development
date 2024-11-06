@@ -34,7 +34,7 @@ export default function TopContactInfo() {
                 <li>
                     <Link
                         href={`tel:${+8801685456708}`}
-                        className="flex items-center gap-1 text-primaryColor/75 hover:text-[#0165ac] duration-100 group">
+                        className="flex items-center gap-1 text-primaryColor/75 hover:text-[#0165ac] dark:text-[#4c80a5] dark:hover:text-[#6eb5e7] duration-100 group">
                         <div className="text-4xl">
                             <PiPhoneCallLight className="group-hover:scale-105 duration-100" />
                         </div>
@@ -47,7 +47,7 @@ export default function TopContactInfo() {
                 <li>
                     <Link
                         href={`mailto:${'⁠b2winitiative@gmail.com'}`}
-                        className="flex items-center gap-2 text-primaryColor/75 hover:text-[#0165ac] duration-100 group">
+                        className="flex items-center gap-2 text-primaryColor/75 hover:text-[#0165ac] dark:text-[#4c80a5] dark:hover:text-[#6eb5e7] duration-100 group">
                         <div className="text-4xl">
                             <GoMail className="group-hover:scale-105 duration-100" />
                         </div>
@@ -64,7 +64,7 @@ export default function TopContactInfo() {
                     <Link
                         href={`https://www.google.com/maps?q=${23.7959291},${90.4231129}`}
                         target="_blank"
-                        className="flex items-center gap-1 text-primaryColor/75 hover:text-[#0165ac] duration-100 group">
+                        className="flex items-center gap-1 text-primaryColor/75 hover:text-[#0165ac] dark:text-[#4c80a5] dark:hover:text-[#6eb5e7] duration-100 group">
                         <div className="text-4xl">
                             <TfiLocationPin className="group-hover:scale-105 duration-100" />
                         </div>

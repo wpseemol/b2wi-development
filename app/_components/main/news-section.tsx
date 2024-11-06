@@ -9,7 +9,10 @@ export default function NewSection() {
                     {/* <h3 className="text-2xl text-[#0976c4] font-semibold">
                         Insights & Inspirations
                     </h3> */}
-                    <h2 className="md:text-[40px] text-4xl font-bold text-[#004679]">
+                    <h2
+                        className="md:text-[40px] text-4xl font-bold text-[#004679]
+                    dark:text-neutral-100
+                    ">
                         B2WI In the News
                     </h2>
                 </div>

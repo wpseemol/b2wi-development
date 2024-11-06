@@ -3,19 +3,20 @@ import { newData } from '@/lib/news-data';
 import Glide from '@glidejs/glide';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { BsArrowRightShort } from 'react-icons/bs';
 import { FaTags } from 'react-icons/fa6';
 
-export default function NewsCarousel() {
+export default function ScholarshipUpdatesCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         setLoading(false);
-        const slider = new Glide('.glide-05', {
+        const slider = new Glide('.scholarship-updates-carousel', {
             type: 'carousel',
             focusAt: 0,
             perView: 3,
-            autoplay: 3000,
+            autoplay: 4500,
             animationDuration: 700,
             gap: 35,
             breakpoints: {
@@ -51,37 +52,40 @@ export default function NewsCarousel() {
                 </div>
             )}
             <div
-                className={`glide-05 relative w-full ${
+                className={`scholarship-updates-carousel relative w-full ${
                     loading ? 'opacity-0' : ''
                 }`}>
                 {/* Slides */}
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                         {newData.map((news) => (
-                            <li key={news.id} className="group relative">
-                                <figure className="w-full sm:h-[280px] h-[200px] rounded-lg">
+                            <li
+                                key={news.id}
+                                className="group border border-neutral-500/10 rounded-lg ">
+                                <figure className="w-full sm:h-[280px] h-[200px] rounded-t-lg overflow-hidden">
                                     <Image
                                         width={350}
                                         height={240}
                                         alt={news.title}
                                         src={`/images/news/${news.imgUrl}`}
-                                        className="w-full h-full object-cover object-center rounded-lg"
+                                        className="w-full h-full object-cover object-center rounded-t-lg scale-110 hover:scale-100 duration-200"
                                     />
                                 </figure>
-                                {/* news cart details */}
-                                <div className="group/subSection mt-3 absolute -bottom-40 group-hover:bottom-0 duration-200 left-0 w-full bg-[#0070c0] rounded-b-lg p-6">
-                                    <div className="flex items-center gap-1 text-xs mb-3 text-neutral-300/80">
+                                <div className="ml-1 mt-3 p-3 pl-6 pb-6 ">
+                                    <div className="flex items-center gap-1 text-xs mb-3 text-neutral-700/70 dark:text-neutral-400">
                                         <FaTags /> <h3>{news.publishedBy}</h3>
                                     </div>
-                                    <p className="text-neutral-300 text-sm mb-1">
+                                    <p className="text-primaryColor/70 dark:text-neutral-300 text-sm mb-1">
                                         {news.publishedAt}
                                     </p>
-                                    <h2 className="text-base font-semibold text-neutral-100 group-hover/subSection:underline duration-150 my-2">
+                                    <h2 className="text-base font-semibold text-[#002c4b] dark:text-neutral-100 group-hover:underline duration-150 ">
                                         {news.title}
                                     </h2>
-                                    <button className=" text-base text-neutral-300 flex items-center gap-1 group-hover/subSection:gap-4 duration-150">
+                                    <button className="mt-4 text-base text-neutral-700/75 dark:text-neutral-500 flex items-center gap-1 group-hover:gap-4 duration-150 bg-primaryColor text-white px-3 py-2 rounded">
                                         Read More{' '}
-                                        <span className="">{'>'}</span>
+                                        <span className="text-2xl">
+                                            <BsArrowRightShort />
+                                        </span>
                                     </button>
                                 </div>
                             </li>

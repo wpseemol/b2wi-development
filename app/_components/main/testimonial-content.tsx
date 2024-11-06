@@ -16,7 +16,9 @@ export default function TestimonialContent({
                 <div className="relative p-6">
                     <figure className="relative z-10">
                         <blockquote className="p-6 text-lg leading-relaxed">
-                            <p>{description}</p>
+                            <p className="dark:text-neutral-100/80">
+                                {description}
+                            </p>
                         </blockquote>
                         <figcaption className="flex items-center gap-4 p-6 pt-2 text-sm text-primaryColor">
                             <div className="flex flex-col gap-1">

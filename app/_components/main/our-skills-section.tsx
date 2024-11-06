@@ -2,12 +2,12 @@ export default function OurSkillSection() {
     return (
         <section className="container mx-auto md:px-0 px-2 md:mb-16 mb-8">
             <div>
-                <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] mb-5">
+                <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] dark:text-neutral-100 mb-5">
                     Empowering Students with{' '}
                     <span className="text-[#0070c0]">Global </span> Insights for{' '}
                     <span className="text-[#0070c0]"> Lasting Impact</span>
                 </h2>
-                <p className="text-center text-neutral-700/85 font-medium text-xl">
+                <p className="text-center text-neutral-700/85 dark:text-neutral-300 font-medium text-xl">
                     Get expert guidance to thrive in global careers
                 </p>
 

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import ScholarshipUpdatesCarousel from './scholarship-updates-carousel';
 
 export default function ScholarshipUpdates() {
     return (
@@ -8,7 +9,10 @@ export default function ScholarshipUpdates() {
                     {/* <h3 className="text-2xl text-[#0976c4] font-semibold">
                         Insights & Inspirations
                     </h3> */}
-                    <h2 className="md:text-[40px] text-4xl font-bold text-[#004679]">
+                    <h2
+                        className="md:text-[40px] text-4xl font-bold text-[#004679]
+                    dark:text-neutral-100
+                    ">
                         Scholarship Updates
                     </h2>
                 </div>
@@ -20,7 +24,7 @@ export default function ScholarshipUpdates() {
                 </Button>
             </div>
             {/* slider section */}
-            {/* <NewsCarousel /> */}
+            <ScholarshipUpdatesCarousel />
         </section>
     );
 }

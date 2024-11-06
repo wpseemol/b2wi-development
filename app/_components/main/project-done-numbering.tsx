@@ -18,7 +18,7 @@ export default function ProjectDoneNumbering() {
                     </div>
                 ))}
             </div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[#00385f73] "></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[#00385f73] dark:bg-[#1830477a]"></div>
         </section>
     );
 }
