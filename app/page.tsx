@@ -3,9 +3,11 @@ import BrandingSection from './_components/main/branding-section';
 import CategorySection from './_components/main/category-section';
 import EventWorkshop from './_components/main/event-workshops';
 import HeroSection from './_components/main/hero-section';
+import InsightsSection from './_components/main/Insights-section';
 import NewSection from './_components/main/news-section';
 import OurSkillSection from './_components/main/our-skills-section';
 import ProjectDoneNumbering from './_components/main/project-done-numbering';
+import ScholarshipUpdates from './_components/main/scholarship-updates-section';
 import TestimonialsSection from './_components/main/testimonials-section';
 
 export default function HomePage() {
@@ -19,6 +21,8 @@ export default function HomePage() {
             <OurSkillSection />
             <TestimonialsSection />
             <EventWorkshop />
+            <ScholarshipUpdates />
+            <InsightsSection />
             <NewSection />
         </main>
     );

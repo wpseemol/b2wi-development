@@ -47,7 +47,7 @@ export default function EventWorkshop() {
                     ))}
                 </div>
             </div>
-            <div className="bg-white dark:bg-[#030712] dark:border-primaryColor rounded-xl px-8 py-10 flex md:flex-row flex-col md:gap-0 gap-3 justify-between absolute md:-bottom-[4rem] -bottom-[8rem] border shadow-2xl w-full container left-1/2 transform -translate-x-1/2">
+            <div className="bg-white dark:bg-[#030712] dark:border-primaryColor rounded-xl px-8 py-10 flex md:flex-row flex-col md:gap-0 gap-3 justify-between absolute md:-bottom-[4rem] -bottom-[8rem] border shadow-2xl w-full container left-1/2 transform -translate-x-1/2 z-20">
                 <p className="font-semibold text-neutral-800/95 dark:text-neutral-100/80 ">
                     Unlock your full potential with Empower Minds, where
                     innovation, empowerment,

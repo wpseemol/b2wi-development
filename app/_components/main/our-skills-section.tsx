@@ -27,7 +27,7 @@ export default function OurSkillSection() {
                                     background:
                                         'linear-gradient(rgb(1 30 51 / 17%) 30%, rgb(86 86 126 / 30%) 35%, rgb(0 63 108) 91%)',
                                 }}>
-                                <h2>{skill.title}</h2>
+                                <h2 className="text-center">{skill.title}</h2>
                             </div>
                         </div>
                     ))}

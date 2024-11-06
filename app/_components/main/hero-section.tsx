@@ -1,8 +1,8 @@
 export default function HeroSection() {
     return (
         <section className="bg-hero-pattern bg-right-top bg-no-repeat bg-cover bg-[#8a3f3fb2] -mt-1">
-            <div className="w-full min-h-[730px] bg-neutral-900/45">
-                <div className="container mx-auto md:px-0 px-2  text-white flex flex-col justify-center md:gap-6 gap-3 min-h-[750px]">
+            <div className="w-full sm:min-h-[730px] min-h-[530px] bg-neutral-900/45">
+                <div className="container mx-auto md:px-0 px-2  text-white flex flex-col justify-center md:gap-6 gap-3 sm:min-h-[730px] min-h-[530px]">
                     {/* <h3 className="text-2xl font-semibold">
                         Ignite Your Potential with
                     </h3> */}
