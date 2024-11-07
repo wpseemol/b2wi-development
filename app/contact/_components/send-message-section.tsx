@@ -1,10 +1,12 @@
 export default function SendMessageSection() {
     return (
-        <div className=" col-span-2  h-full p-5 pb-0 ">
+        <div className=" md:col-span-2  h-full md:p-5 md:pb-0 p-2 pb-0">
             <h2 className="text-3xl font-bold mb-4 text-neutral-800/85 ">
                 Send A Message
             </h2>
-            <form action="" className="grid grid-cols-2 gap-x-4 gap-y-8">
+            <form
+                action=""
+                className="grid sm:grid-cols-2 grid-cols-1 gap-x-4 sm:gap-y-8 gap-y-3">
                 <input
                     type="text"
                     name="name"
@@ -44,10 +46,10 @@ export default function SendMessageSection() {
                     rows={4}
                     cols={50}
                     required
-                    className="col-span-2 border focus-visible:outline-none p-3"></textarea>
+                    className="sm:col-span-2 border focus-visible:outline-none p-3"></textarea>
                 <button
                     type="submit"
-                    className="col-span-2 border focus-visible:outline-none bg-primaryColor text-white py-3 font-medium ">
+                    className="sm:col-span-2 border focus-visible:outline-none bg-primaryColor text-white py-3 font-medium ">
                     Submit
                 </button>
             </form>

@@ -5,7 +5,7 @@ export default function ContactPage() {
     return (
         <main className="container mx-auto">
             <section className="text-center py-5 md:mb-16 mb-10">
-                <h2 className="text-neutral-900/85 text-[52px] font-bold leading-snug">
+                <h2 className="text-neutral-900/85 sm:text-[52px] text-3xl font-bold leading-snug">
                     Have Questions? <br />
                     <span className="text-primaryColor">Contact us</span>.
                 </h2>
