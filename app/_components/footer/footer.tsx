@@ -10,7 +10,7 @@ import EmailSendButton from './email-send-input';
 export default function Footer() {
     return (
         <footer className="bg-[#023153] dark:bg-[#02223a] text-white">
-            <section className="container mx-auto flex md:flex-row flex-col md:justify-evenly items-start md:py-14 py-8 md:gap-0 gap-7">
+            <section className="container mx-auto flex md:flex-row flex-col md:justify-evenly items-start md:py-14 py-8 md:gap-0 gap-7 md:pb-8">
                 {/* site inform */}
 
                 <div className="xl:w-[calc(25%-3.5rem)] md:w-1/4 w-full xl:px-5">
@@ -156,7 +156,7 @@ export default function Footer() {
                 {/* Quick Links */}
             </section>
 
-            <section className="bg-white">
+            {/* <section className="bg-white">
                 <figure className="mx-auto w-fit">
                     <Image
                         src={'/images/Payment-Banner_Jul24_V1-02-2048x229.png'}
@@ -165,8 +165,8 @@ export default function Footer() {
                         alt="ssl commerz banare"
                     />
                 </figure>
-            </section>
-            <section className="container mx-auto">
+            </section> */}
+            <section className="container mx-auto border-t ">
                 <p className="text-center md:py-5 py-3 text-base">
                     Copyright ©2024 B2W Initiative. Developed by YSI Bangla Ltd.{' '}
                 </p>
