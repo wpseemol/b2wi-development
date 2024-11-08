@@ -5,7 +5,7 @@ import { MdNavigateNext } from 'react-icons/md';
 export default function BreadcrumbFirstLink({
     currentPageName,
 }: {
-    currentPageName;
+    currentPageName: string;
 }) {
     return (
         <section className="mt-4">
