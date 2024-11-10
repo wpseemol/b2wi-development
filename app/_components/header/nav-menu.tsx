@@ -68,7 +68,7 @@ export default function NavMenu() {
 export const nevMenus: MenuItem[] = [
     { id: 1, slug: '/', name: 'Home' },
     { id: 2, slug: '/about-us', name: 'About Us' },
-    { id: 3, slug: '/how-do-we-hep', name: 'How Do We Help' },
+    { id: 3, slug: '/how-do-we-help', name: 'How Do We Help' },
     { id: 4, slug: '/people-behind', name: 'People Behind' },
     { id: 5, slug: '/success-stories', name: 'Success Stories' },
     { id: 6, slug: '/hacks', name: 'Hacks ' },

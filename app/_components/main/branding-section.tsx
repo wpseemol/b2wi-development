@@ -6,8 +6,8 @@ import PointerIcon from '../../../components/svg/pointer-icon';
 export default function BrandingSection() {
     return (
         <section className="flex justify-center md:flex-row flex-col md:mb-16 mb-8">
-            <div className=" min-h-[150px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative">
-                <div className="flex md:justify-end gap-3 justify-center w-full md:pl-0 pl-2">
+            <div className=" min-h-[150px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative ">
+                <div className="flex md:justify-end gap-3 justify-center w-full  md:pl-8 pl-2">
                     <span className="w-5 h-5 mt-1 ">
                         <PointerIcon />
                     </span>
