@@ -1,18 +1,27 @@
+import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
 import { MdNavigateNext } from 'react-icons/md';
 
 export default function BreadcrumbFirstLink({
     currentPageName,
+    className,
+    activeClassName,
 }: {
     currentPageName: string;
+    className?: string;
+    activeClassName?: string;
 }) {
     return (
-        <section className="mt-4">
+        <section className="pt-4">
             <div className="flex items-center gap-2">
-                <Link href="/">Home</Link>
+                <Link href="/" className={cn(className)}>
+                    Home
+                </Link>
                 <MdNavigateNext />
-                <p className="text text-primaryColor">{currentPageName}</p>
+                <p className={cn('text text-primaryColor', activeClassName)}>
+                    {currentPageName}
+                </p>
             </div>
         </section>
     );
