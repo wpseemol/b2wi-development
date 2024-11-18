@@ -4,20 +4,20 @@ import { FaSearch } from 'react-icons/fa';
 
 export default function HelpSearchSection() {
     return (
-        <section className=" md:mb-16 mb-14 flex flex-col items-center justify-center py-10 gap-y-5 ">
+        <section className=" flex flex-col items-center justify-center py-10 gap-y-5 ">
             <h2 className="text-5xl font-bold text-white">
                 How Does <span className="text ">B2WI </span> Help
             </h2>
             <form className="relative">
                 {/* Search Icon */}
-                <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 " />
                 {/* Input Field */}
                 <input
                     type="text"
                     name="help"
                     id="search"
                     placeholder="Search..."
-                    className="pl-9 focus:right-0 focus:outline-none p-2 rounded-lg border border-gray-300 w-full text-neutral-800"
+                    className="pl-9 focus:right-0 focus:outline-none p-2 rounded-lg border border-gray-300 w-full text-neutral-800 dark:text-neutral-100"
                 />
             </form>
 
