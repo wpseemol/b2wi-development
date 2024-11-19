@@ -13,8 +13,8 @@ export default function BreadcrumbFirstLink({
     activeClassName?: string;
 }) {
     return (
-        <section className="pt-4">
-            <div className="flex items-center gap-2">
+        <section className="pt-4 sm:pl-0 pl-2">
+            <div className="flex items-center gap-2 ">
                 <Link href="/" className={cn(className)}>
                     Home
                 </Link>

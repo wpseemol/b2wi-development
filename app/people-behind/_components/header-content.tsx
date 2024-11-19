@@ -1,6 +1,6 @@
 export default function HeaderContent() {
     return (
-        <section className=" md:mb-16 mt-8 mb-10">
+        <section className=" md:mb-16 mt-8 mb-10 sm:px-0 px-2">
             <div className=" flex flex-col items-center">
                 <h2 className="text-neutral-900/85 dark:text-white sm:text-[52px] text-3xl font-bold leading-snug text-center mb-4">
                     People Behind
