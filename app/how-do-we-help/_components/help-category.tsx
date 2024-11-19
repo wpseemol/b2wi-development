@@ -12,10 +12,10 @@ export default function HelpCategory() {
                     <div
                         key={category.id}
                         className="flex flex-col gap-y-5 justify-center items-center p-5 border rounded-md hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-200">
-                        <h3 className="text-3xl font-semibold text-center text-neutral-900/85">
+                        <h3 className="text-3xl font-semibold text-center text-neutral-900/85 dark:text-neutral-100/85">
                             {category.title}
                         </h3>
-                        <p className="text-center text-lg font-medium text-neutral-800/80">
+                        <p className="text-center text-lg font-medium text-neutral-800/80 dark:text-neutral-100/85">
                             {category.description}
                         </p>
                     </div>

@@ -1,6 +1,7 @@
 import BreadcrumbFirstLink from '@/components/breadcrumb-first-link';
 import HelpCategory from './_components/help-category';
 import HelpSearchSection from './_components/help-search-section';
+import HelpSectionTabView from './_components/help-section-tabview';
 
 export default function HowDoWeHelpPage() {
     return (
@@ -15,6 +16,7 @@ export default function HowDoWeHelpPage() {
                 </div>
             </section>
             <HelpCategory />
+            <HelpSectionTabView />
         </main>
     );
 }
