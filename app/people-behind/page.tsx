@@ -1,11 +1,11 @@
+import BreadcrumbFirstLink from '@/components/breadcrumb-first-link';
+import HeaderContent from './_components/header-content';
+
 export default function PeopleBehindPage() {
     return (
-        <main>
-            <section>
-                <p className="text-2xl text-center mb-10">
-                    People behind Page data coming soon ...
-                </p>
-            </section>
+        <main className="container mx-auto">
+            <BreadcrumbFirstLink currentPageName="People Behind" />
+            <HeaderContent />
         </main>
     );
 }
