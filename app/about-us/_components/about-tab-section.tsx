@@ -26,7 +26,7 @@ export default function AboutTabSection() {
                 Our<span className="text-primaryColor"> Story</span>.
             </h2>
 
-            <div className="flex items-center -mx-4 sm:justify-center flex-nowrap dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
+            <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap  dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
                 {ourStoryContent.map((story) => (
                     <Fragment key={story.id}>
                         <button
@@ -36,7 +36,7 @@ export default function AboutTabSection() {
                                 selectedStory === story.id
                                     ? 'border border-b-0 rounded-t-lg'
                                     : 'border border-transparent'
-                            } flex items-center flex-shrink-0 px-5 py-3 space-x-2 dark:text-gray-400 relative`}>
+                            } flex items-center flex-shrink-0 sm:px-5 px-2 py-3 space-x-2 dark:text-gray-400 relative sm:text-base text-sm `}>
                             {selectedStory === story.id && (
                                 <span className="absolute w-full bg-white dark:bg-[#030712] h-2 -bottom-1 left-0 z-10"></span>
                             )}

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Fragment, useEffect, useState } from 'react';
 
 const getDescription = (
@@ -7,17 +8,16 @@ const getDescription = (
     ourStoryContent: OurStoryContent[]
 ): string | null => {
     const story = ourStoryContent.find((story) => story.id === id);
-    return story ? story.description : null;
+    return story ? story : null;
 };
 
 export default function HelpSectionTabView() {
     const [selectedStory, setSelectedStory] = useState<string>('LOR-review');
-    const [selectedDescription, setSelectedDescription] = useState<
-        string | null
-    >(getDescription('LOR-review', helpTabContent));
+    const [selectedHelpContent, setSelectedHelpContent] =
+        useState<HelpTabContent>(getDescription('LOR-review', helpTabContent));
 
     useEffect(() => {
-        setSelectedDescription(getDescription(selectedStory, helpTabContent));
+        setSelectedHelpContent(getDescription(selectedStory, helpTabContent));
     }, [selectedStory]);
 
     return (
@@ -26,7 +26,8 @@ export default function HelpSectionTabView() {
                 Our<span className="text-primaryColor"> Story</span>.
             </h2> */}
 
-            <div className="flex items-center -mx-4 sm:justify-center flex-nowrap dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
+            {/* tab button style */}
+            <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap  dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
                 {helpTabContent.map((story) => (
                     <Fragment key={story.id}>
                         <button
@@ -40,20 +41,36 @@ export default function HelpSectionTabView() {
                             {selectedStory === story.id && (
                                 <span className="absolute w-full bg-white dark:bg-[#030712] h-2 -bottom-1 left-0 z-10"></span>
                             )}
-                            <span>{story.title}</span>
+                            <span>{story.tabTitle}</span>
                         </button>
                     </Fragment>
                 ))}
             </div>
 
-            {selectedDescription && (
-                <section className="p-4 space-y-5">
-                    <div
-                        dangerouslySetInnerHTML={{
-                            __html: selectedDescription,
-                        }}
-                        className="space-y-5"
-                    />
+            {selectedHelpContent && (
+                <section className="p-4 space-y-5 grid md:grid-cols-2 grid-cols-1">
+                    <div className="flex flex-col justify-center gap-y-5 pr-5">
+                        <h3 className="text-3xl font-semibold text-neutral-900/85 dark:text-neutral-100/90">
+                            {selectedHelpContent.title}
+                        </h3>
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: selectedHelpContent.description,
+                            }}
+                            className="space-y-5 text-neutral-800/85 dark:text-neutral-200/90 text-lg"
+                        />
+                    </div>
+                    <div>
+                        <figure>
+                            <Image
+                                src={`/images/how-does-help/${selectedHelpContent.imageUrl}`}
+                                alt={selectedHelpContent.title}
+                                width={700}
+                                height={450}
+                                className="w-full h-full rounded"
+                            />
+                        </figure>
+                    </div>
                 </section>
             )}
         </section>
@@ -63,26 +80,34 @@ export default function HelpSectionTabView() {
 const helpTabContent: HelpTabContent[] = [
     {
         id: 'LOR-review',
-        title: 'LOR Review',
+        tabTitle: 'LOR Review',
+        title: 'LoR (Letter of Recommendation) Review',
         description:
             '<p>We provide insights on how to obtain and format effective recommendation letters from your mentors.</p>',
+        imageUrl: 'LOR Review picture.png',
     },
     {
-        id: 'who-are-we',
-        title: 'Who Are We',
+        id: 'visa-application-review',
+        tabTitle: 'Visa Application Review',
+        title: 'Visa Application Review',
         description:
-            '<p>We’re a team of seasoned education professionals and alumni of top-tier foreign universities from Canada, UK, Australia, and Europe who have navigated the paths of global academic and professional stages themselves.</p>',
+            '<p>With visa procedures varying across countries, our experienced team will assist you in avoiding common pitfalls and ensuring a smooth process.</p>',
+
+        imageUrl: 'Visa Application Review image.png',
     },
     {
-        id: 'why-did-we-decide-to-start-B2W-Initiative?',
-        title: 'Why did we decide to start B2W Initiative?',
+        id: 'accommodation-assistance',
+        tabTitle: 'Accommodation Assistance',
+        title: 'Accommodation Assistance',
         description:
-            '<p>Numerous studies have surmised that graduate unemployment in Bangladesh is one of the highest in the world. In a country where there is the gift of “Demographic Dividend”, Bangladesh is failing miserably to take benefit of the Demographic Dividend with reported graduate unemployment rates as high as 38.6%.</p><p>According to the Bangladesh Bureau of Statistics (BBS), nearly 800,000 graduates were unemployed by the end of 2022, reflecting an unemployment rate of 12% among tertiary-educated individuals, which is the highest across all education levels.</p><p>Although there are many factors contributing to this high level of graduate unemployment rates, one of the primary reasons is the economy’s limited capacity to create good jobs. Each year, Bangladesh produces a substantial number of graduates, with estimates indicating that around 2 million new graduates enter the job market annually. This influx significantly outpaces job creation efforts, contributing to high levels of unemployment among the educated youth.</p><p>This is one of the backdrops of launching B2W Initiative whereby we want to create global opportunities for our graduates and through that, we not only create positive change in individual lives but also in how Bangladesh is represented globally.</p>',
+            '<p>We also offer resources to help you find safe, convenient, and affordable housing, so you can focus on your studies without the stress of relocation.</p>',
+        imageUrl: 'Accommodation Assistance image.png',
     },
 ];
 
 interface HelpTabContent {
     id: string;
+    tabTitle: string;
     title: string;
     description: string;
     imageUrl?: string;
