@@ -3,3 +3,9 @@ export interface TopSearchType {
     title: string;
     href: string;
 }
+
+export interface CategoryHelpType {
+    id: number | string;
+    title: string;
+    description: string;
+}

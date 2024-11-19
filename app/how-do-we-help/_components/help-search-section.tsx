@@ -5,7 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 export default function HelpSearchSection() {
     return (
         <section className=" flex flex-col items-center justify-center py-10 gap-y-5 ">
-            <h2 className="text-5xl font-bold text-white">
+            <h2 className="md:text-5xl text-3xl font-bold text-white">
                 How Does <span className="text ">B2WI </span> Help
             </h2>
             <form className="relative">
@@ -21,7 +21,7 @@ export default function HelpSearchSection() {
                 />
             </form>
 
-            <div className="flex items-center gap-3 text-neutral-100">
+            <div className="flex items-center gap-3 text-neutral-100 md:flex-nowrap flex-wrap">
                 <p>Top Search</p>
 
                 {topSearch.map((searchItem) => (
