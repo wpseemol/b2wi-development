@@ -3,18 +3,21 @@
 import Image from 'next/image';
 import { Fragment, useEffect, useState } from 'react';
 
+// Function to find and return content by ID
 const getDescription = (
     id: string,
-    ourStoryContent: OurStoryContent[]
-): string | null => {
+    ourStoryContent: HelpTabContent[] // Updated to use the correct type
+): HelpTabContent | null => {
     const story = ourStoryContent.find((story) => story.id === id);
-    return story ? story : null;
+    return story || null; // Return null if no match is found
 };
 
 export default function HelpSectionTabView() {
     const [selectedStory, setSelectedStory] = useState<string>('LOR-review');
     const [selectedHelpContent, setSelectedHelpContent] =
-        useState<HelpTabContent>(getDescription('LOR-review', helpTabContent));
+        useState<HelpTabContent | null>(
+            getDescription('LOR-review', helpTabContent)
+        );
 
     useEffect(() => {
         setSelectedHelpContent(getDescription(selectedStory, helpTabContent));
@@ -22,16 +25,11 @@ export default function HelpSectionTabView() {
 
     return (
         <section className="container mx-auto my-10">
-            {/* <h2 className="text-neutral-900/85 dark:text-white sm:text-[52px] text-3xl font-bold leading-snug text-center mb-4">
-                Our<span className="text-primaryColor"> Story</span>.
-            </h2> */}
-
-            {/* tab button style */}
-            <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap  dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
+            {/* Tab button styles */}
+            <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
                 {helpTabContent.map((story) => (
                     <Fragment key={story.id}>
                         <button
-                            rel="noopener noreferrer"
                             onClick={() => setSelectedStory(story.id)}
                             className={`${
                                 selectedStory === story.id
@@ -92,7 +90,6 @@ const helpTabContent: HelpTabContent[] = [
         title: 'Visa Application Review',
         description:
             '<p>With visa procedures varying across countries, our experienced team will assist you in avoiding common pitfalls and ensuring a smooth process.</p>',
-
         imageUrl: 'Visa Application Review image.png',
     },
     {

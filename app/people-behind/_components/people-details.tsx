@@ -5,7 +5,7 @@ export default function PeopleDetails({
     htmlContent,
     contentId,
 }: {
-    htmlContent: strings;
+    htmlContent: string;
     contentId: string | number;
 }) {
     const [isExpanded, setIsExpanded] = useState(false);
