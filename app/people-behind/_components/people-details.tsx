@@ -26,9 +26,9 @@ export default function PeopleDetails({
     showContent =
         wordCount > shoWord
             ? showContent +
-              ` <button id='more-less-button-${contentId}' class='mt-2 text-primaryColor hover:underline dark:text-white'> ${
+              ` <button id='more-less-button-${contentId}' class='mt-2 text-primaryColor hover:underline dark:text-white sm:inline hidden'> ${
                   isExpanded ? 'Read Less...' : 'Read More...'
-              } </button`
+              } </button>`
             : showContent;
 
     useEffect(() => {
@@ -39,6 +39,7 @@ export default function PeopleDetails({
 
         const handleClick = () => {
             setIsExpanded((prev) => !prev);
+            console.log(buttonId, 'is clicked');
         };
 
         if (button) {
@@ -54,13 +55,26 @@ export default function PeopleDetails({
     }, [contentId, isExpanded, loading]);
 
     return loading ? (
-        <div></div>
+        <div className="flex justify-center items-center">
+            {' '}
+            <p> Loading...</p>
+        </div>
     ) : (
-        <div
-            dangerouslySetInnerHTML={{
-                __html: showContent,
-            }}
-            className="space-y-2"
-        />
+        <>
+            <div
+                dangerouslySetInnerHTML={{
+                    __html: showContent,
+                }}
+                className="space-y-2 text-center"
+            />
+            {wordCount > shoWord && (
+                <button
+                    onClick={() => setIsExpanded((prev) => !prev)}
+                    className="mt-2 text-primaryColor hover:underline dark:text-white sm:hidden inline">
+                    {' '}
+                    {isExpanded ? 'Read Less...' : 'Read More...'}{' '}
+                </button>
+            )}
+        </>
     );
 }

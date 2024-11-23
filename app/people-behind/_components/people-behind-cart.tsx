@@ -10,7 +10,7 @@ export default function PeopleBehindCart({
     details: PeopleBehind;
 }) {
     return (
-        <div className="flex flex-col items-center gap-y-3 border border-neutral-700/15 px-3 py-5 sm:px-5 sm:py-8 h-fit hover:shadow-md duration-100 rounded">
+        <div className="flex flex-col items-center gap-y-3 border border-neutral-700/15 px-3 py-5 sm:px-5 sm:py-8 hover:shadow-md duration-100 rounded h-fit">
             <figure className="overflow-hidden rounded-md">
                 <Image
                     src={`/images/people-behind/${details.imageUrl}`}
