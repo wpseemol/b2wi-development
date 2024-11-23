@@ -1,14 +1,17 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function PeopleDetails({
     htmlContent,
+    contentId,
 }: {
     htmlContent: strings;
+    contentId: string | number;
 }) {
-    const [isExpanded, setISExpanded] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [loading, setLoading] = useState(true);
 
-    const shoWord = 50;
+    const shoWord = 95;
 
     const words = htmlContent.split(/\s+/); // split by whitespace.
     const wordCount = words.length;
@@ -20,26 +23,44 @@ export default function PeopleDetails({
         ? htmlContent
         : truncatedContent;
 
-    showContent += '';
+    showContent =
+        wordCount > shoWord
+            ? showContent +
+              ` <button id='more-less-button-${contentId}' class='mt-2 text-primaryColor hover:underline dark:text-white'> ${
+                  isExpanded ? 'Read Less...' : 'Read More...'
+              } </button`
+            : showContent;
 
-    return (
-        <div className="space-y-2">
-            {/* Display truncated or full content */}
-            <div
-                dangerouslySetInnerHTML={{
-                    __html: showContent,
-                }}
-                className="space-y-2"
-            />
+    useEffect(() => {
+        setLoading(false);
 
-            {/* Show "Read More" or "Read Less" button only if content exceeds 50 words */}
-            {wordCount > shoWord && (
-                <button
-                    onClick={() => setISExpanded(!isExpanded)}
-                    className="mt-2 text-primary hover:underline dark:text-white">
-                    {isExpanded ? 'Read Less...' : 'Read More...'}
-                </button>
-            )}
-        </div>
+        const buttonId = `more-less-button-${contentId}`;
+        const button = document.getElementById(buttonId);
+
+        const handleClick = () => {
+            setIsExpanded((prev) => !prev);
+        };
+
+        if (button) {
+            button.addEventListener('click', handleClick);
+        }
+
+        // Cleanup listener on component unmount
+        return () => {
+            if (button) {
+                button.removeEventListener('click', handleClick);
+            }
+        };
+    }, [contentId, isExpanded, loading]);
+
+    return loading ? (
+        <div></div>
+    ) : (
+        <div
+            dangerouslySetInnerHTML={{
+                __html: showContent,
+            }}
+            className="space-y-2"
+        />
     );
 }

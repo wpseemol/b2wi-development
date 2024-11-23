@@ -22,7 +22,10 @@ export default function PeopleBehindCart({
             </figure>
             <h3 className="text-2xl font-medium">{details.name}</h3>
 
-            <PeopleDetails htmlContent={details.description} />
+            <PeopleDetails
+                contentId={details.id}
+                htmlContent={details.description}
+            />
 
             {details.socialLink && (
                 <div className="mt-3">
