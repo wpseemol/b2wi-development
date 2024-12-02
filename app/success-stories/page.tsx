@@ -8,7 +8,7 @@ export default function SuccessStoriesPage() {
                 <BreadcrumbFirstLink currentPageName="Success Stories" />
             </section>
 
-            <section className="text-center py-5 md:mb-16 mb-10 container mx-auto">
+            <section className="text-center py-5 container mx-auto">
                 <h2 className="text-neutral-900/85 sm:text-[52px] text-3xl font-bold leading-snug">
                     Success Stories.
                 </h2>
@@ -18,7 +18,7 @@ export default function SuccessStoriesPage() {
                     built into many programs.
                 </p> */}
             </section>
-            <section className="container mx-auto">
+            <section className="container mx-auto md:mb-16 mb-10">
                 <SuccessStoriesContent />
             </section>
         </main>

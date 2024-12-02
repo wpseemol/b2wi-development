@@ -1,12 +1,11 @@
 import { successStories } from '@/lib/success-stories';
+import SuccessStoriesCard from './success-stories-card';
 
 export default function SuccessStoriesContent() {
     return (
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
             {successStories.map((stories) => (
-                <div key={stories.id}>
-                    <h2>{stories.title}</h2>
-                </div>
+                <SuccessStoriesCard storiesDetails={stories} key={stories.id} />
             ))}
         </div>
     );
