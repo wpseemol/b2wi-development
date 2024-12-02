@@ -19,7 +19,7 @@ export default function BreadcrumbFirstLink({
                     Home
                 </Link>
                 <MdNavigateNext />
-                <p className={cn('text text-primaryColor', activeClassName)}>
+                <p className={cn(' text-primaryColor', activeClassName)}>
                     {currentPageName}
                 </p>
             </div>

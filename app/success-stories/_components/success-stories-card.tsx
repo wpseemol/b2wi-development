@@ -32,7 +32,7 @@ export default function SuccessStoriesCard({
                 <h2 className="text-base font-semibold text-[#002c4b] dark:text-neutral-100 group-hover:underline duration-150 ">
                     {storiesDetails.title}
                 </h2>
-                <button className="mt-4 text-base text-neutral-700/75 dark:text-neutral-500 flex items-center gap-1 group-hover:gap-4 duration-150 bg-primaryColor text-white px-3 py-2 rounded">
+                <button className="mt-4 text-base text-neutral-700/75 dark:text-neutral-200 flex items-center gap-1 group-hover:gap-4 duration-150 bg-primaryColor text-white px-3 py-2 rounded">
                     Read More{' '}
                     <span className="text-2xl">
                         <BsArrowRightShort />

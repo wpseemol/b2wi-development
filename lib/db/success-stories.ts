@@ -16,8 +16,8 @@ export const successStories: SuccessStoriesType[] = [
     },
     {
         id: 2,
-        slug: 'how-to-maximize-your-scholarship-chances',
-        title: 'top-3-mistakes-to-avoid-in-your-visa-application',
+        slug: 'top-3-mistakes-to-avoid-in-your-visa-application',
+        title: 'Top 3 Mistakes to Avoid in Your Visa Application',
         imgUrl: 'Top 3 Mistakes to Avoid in Your Visa Application.png',
         publishIn: 'Study Abroad Hacks',
         publishOn: 'October 8, 2024',
