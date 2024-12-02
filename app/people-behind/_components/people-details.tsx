@@ -65,7 +65,7 @@ export default function PeopleDetails({
                 dangerouslySetInnerHTML={{
                     __html: showContent,
                 }}
-                className="space-y-2 text-center"
+                className="space-y-2 "
             />
             {wordCount > shoWord && (
                 <button
