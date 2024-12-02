@@ -1,4 +1,4 @@
-import { SuccessStoriesType } from '@/lib/success-stories';
+import { SuccessStoriesType } from '@/lib/db/success-stories';
 import Image from 'next/image';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { FaTags } from 'react-icons/fa6';

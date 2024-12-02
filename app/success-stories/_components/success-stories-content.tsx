@@ -1,4 +1,4 @@
-import { successStories } from '@/lib/success-stories';
+import { successStories } from '@/lib/db/success-stories';
 import SuccessStoriesCard from './success-stories-card';
 
 export default function SuccessStoriesContent() {

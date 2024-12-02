@@ -1,5 +1,5 @@
 'use client';
-import { testimonials } from '@/lib/testimonial-data';
+import { testimonials } from '@/lib/db/testimonial-data';
 import Glide from '@glidejs/glide';
 import { useEffect, useState } from 'react';
 import TestimonialContent from './testimonial-content';

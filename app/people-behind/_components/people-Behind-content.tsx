@@ -1,4 +1,4 @@
-import { peopleBehind } from '@/lib/people-behind-data';
+import { peopleBehind } from '@/lib/db/people-behind-data';
 import PeopleBehindCart from './people-behind-cart';
 
 export default function PeopleBehindContent() {

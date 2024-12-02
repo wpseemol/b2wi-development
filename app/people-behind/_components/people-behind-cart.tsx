@@ -1,4 +1,4 @@
-import { PeopleBehind } from '@/lib/people-behind-data';
+import { PeopleBehind } from '@/lib/db/people-behind-data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLinkedinIn } from 'react-icons/fa6';

@@ -1,5 +1,5 @@
 'use client';
-import { newData } from '@/lib/news-data';
+import { newData } from '@/lib/db/news-data';
 import Glide from '@glidejs/glide';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
