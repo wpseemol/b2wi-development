@@ -2,6 +2,7 @@ import { SuccessStoriesType } from '@/lib/db/success-stories';
 import Image from 'next/image';
 import { BsArrowRightShort } from 'react-icons/bs';
 import { FaTags } from 'react-icons/fa6';
+import CardRapperClick from './card-wraper-click';
 
 export default function SuccessStoriesCard({
     storiesDetails,
@@ -9,7 +10,9 @@ export default function SuccessStoriesCard({
     storiesDetails: SuccessStoriesType;
 }) {
     return (
-        <div className="group border border-neutral-500/10 rounded-lg ">
+        <CardRapperClick
+            slug={storiesDetails.slug}
+            className="group border border-neutral-500/80 rounded-lg ">
             <figure className="w-full sm:h-[280px] h-[200px] rounded-t-lg overflow-hidden">
                 <Image
                     width={350}
@@ -36,6 +39,6 @@ export default function SuccessStoriesCard({
                     </span>
                 </button>
             </div>
-        </div>
+        </CardRapperClick>
     );
 }

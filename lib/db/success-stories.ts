@@ -1,6 +1,7 @@
 export const successStories: SuccessStoriesType[] = [
     {
         id: 1,
+        slug: 'how-to-maximize-your-scholarship-chances',
         title: 'How to Maximize Your Scholarship Chances',
         imgUrl: 'How to Maximize Your Scholarship Chances.png',
         publishIn: 'Study Abroad Hacks',
@@ -15,7 +16,8 @@ export const successStories: SuccessStoriesType[] = [
     },
     {
         id: 2,
-        title: 'Top 3 Mistakes to Avoid in Your Visa Application',
+        slug: 'how-to-maximize-your-scholarship-chances',
+        title: 'top-3-mistakes-to-avoid-in-your-visa-application',
         imgUrl: 'Top 3 Mistakes to Avoid in Your Visa Application.png',
         publishIn: 'Study Abroad Hacks',
         publishOn: 'October 8, 2024',
@@ -27,6 +29,7 @@ export const successStories: SuccessStoriesType[] = [
     },
     {
         id: 3,
+        slug: '5-tips-for-writing-a-winning-sop',
         title: '5 Tips for Writing a Winning SOP',
         imgUrl: '5 Tips for Writing a Winning SOP.png',
         publishIn: 'SOP Review',
@@ -43,6 +46,7 @@ export const successStories: SuccessStoriesType[] = [
 
 export interface SuccessStoriesType {
     id: number | string;
+    slug: string;
     title: string;
     imgUrl: string;
     publishIn: string;
