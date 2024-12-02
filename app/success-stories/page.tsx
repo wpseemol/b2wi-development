@@ -1,10 +1,25 @@
+import BreadcrumbFirstLink from '@/components/breadcrumb-first-link';
+import SuccessStoriesContent from './_components/success-stories-content';
+
 export default function SuccessStoriesPage() {
     return (
         <main>
-            <section>
-                <p className="text-2xl text-center mb-10">
-                    Success Stories Page data coming soon ...
-                </p>
+            <section className="container mx-auto">
+                <BreadcrumbFirstLink currentPageName="Success Stories" />
+            </section>
+
+            <section className="text-center py-5 md:mb-16 mb-10 container mx-auto">
+                <h2 className="text-neutral-900/85 sm:text-[52px] text-3xl font-bold leading-snug">
+                    Success Stories.
+                </h2>
+                {/* <p className="font-normal text-neutral-800/80">
+                    Take advantage of the experiential-learning opportunities
+                    <br />
+                    built into many programs.
+                </p> */}
+            </section>
+            <section className="container mx-auto">
+                <SuccessStoriesContent />
             </section>
         </main>
     );
