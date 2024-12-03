@@ -10,9 +10,7 @@ export default function SuccessStoriesCard({
     storiesDetails: SuccessStoriesType;
 }) {
     return (
-        <CardRapperClick
-            slug={storiesDetails.slug}
-            className="group border border-neutral-500/80 rounded-lg ">
+        <CardRapperClick slug={storiesDetails.slug}>
             <figure className="w-full sm:h-[280px] h-[200px] rounded-t-lg overflow-hidden">
                 <Image
                     width={350}

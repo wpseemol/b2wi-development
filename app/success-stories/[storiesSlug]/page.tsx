@@ -24,11 +24,13 @@ export default async function StoriesSinglePage({
                 }}>
                 <div className="container mx-auto ">
                     <div className="bg-slate-200/20 w-fit p-5 pt-0 rounded backdrop-blur-sm">
-                        <BreadcrumbSecondLink
-                            secondHref="/success-stories"
-                            secondPageTitle="Success Stories"
-                            currentPageName={storiesData?.title}
-                        />
+                        {storiesData?.title && (
+                            <BreadcrumbSecondLink
+                                secondHref="/success-stories"
+                                secondPageTitle="Success Stories"
+                                currentPageName={storiesData?.title}
+                            />
+                        )}
                     </div>
                 </div>
             </section>

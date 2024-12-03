@@ -17,16 +17,17 @@ export default function SocialShare({
 }: {
     content: SuccessStoriesType;
 }) {
-    const pathname = usePathname();
+    const pathname: string = usePathname();
 
-    const title = content.title; // Optional text to share along with the link
+    const title: string = content.title; // Optional text to share along with the link
 
     return (
         <div className="flex items-center gap-4 mt-8">
             <h3 className="font-semibold text-primaryColor">Share</h3>
             <FacebookShareButton
                 url={pathname}
-                quote={title} // Optional
+                // quote={title} // Optional
+
                 hashtag="#b2wi" // Optional hashtag
             >
                 {/* Facebook Icon */}
