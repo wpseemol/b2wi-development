@@ -11,7 +11,7 @@ export default function HacksPage() {
             </section>
 
             <section className="text-center py-5 container mx-auto">
-                <h2 className="text-neutral-900/85 sm:text-[52px] text-3xl font-bold leading-snug">
+                <h2 className="text-neutral-900/85 dark:text-white sm:text-[52px] text-3xl font-bold leading-snug">
                     Study Abroad Hacks
                 </h2>
                 {/* <p className="font-normal text-neutral-800/80">
