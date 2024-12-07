@@ -1,3 +1,9 @@
+import MainLoading from './_components/loading/main-loading';
+
 export default function Loading() {
-    return <div>loading...</div>;
+    return (
+        <main>
+            <MainLoading />
+        </main>
+    );
 }
