@@ -2,6 +2,7 @@ import SocialShare from '@/app/success-stories/[storiesSlug]/_components/social-
 import BreadcrumbSecondLink from '@/components/breadcrumb-seceond-link';
 import { hackContents } from '@/lib/db/hacks-data';
 import HackDetails from './_components/hack-details';
+import HackRelatedContents from './_components/hack-related-contents';
 
 export default async function HackSingePage({
     params,
@@ -49,7 +50,7 @@ export default async function HackSingePage({
                             You may also like
                         </h3>
 
-                        {/* <MoreContent slug={storiesSlug} /> */}
+                        <HackRelatedContents slug={hackSlug} />
                     </div>
                 </section>
             </main>
