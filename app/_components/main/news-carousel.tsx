@@ -2,6 +2,7 @@
 import { b2wiNewsData } from '@/lib/db/b2wi-news';
 import Glide from '@glidejs/glide';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaTags } from 'react-icons/fa6';
 
@@ -62,29 +63,47 @@ export default function NewsCarousel() {
                         {carouselContentArray.map((news) => (
                             <li key={news.id} className="group relative">
                                 <figure className="w-full sm:h-[280px] h-[200px] rounded-lg">
-                                    <Image
-                                        width={350}
-                                        height={240}
-                                        alt={news.title}
-                                        src={`/images/news/${news.imgUrl}`}
-                                        className="w-full h-full object-cover object-center rounded-lg"
-                                    />
+                                    <Link href={news.slug} target="_blank">
+                                        <Image
+                                            width={350}
+                                            height={240}
+                                            alt={news.title}
+                                            src={`/images/news/${news.imgUrl}`}
+                                            className="w-full h-full object-cover object-center rounded-lg"
+                                        />
+                                    </Link>
                                 </figure>
                                 {/* news cart details */}
                                 <div className="group/subSection mt-3 absolute -bottom-64 group-hover:bottom-0 duration-200 left-0 w-full bg-[#264d88dc] rounded-b-lg p-6">
                                     <div className="flex items-center gap-1 text-xs mb-3 text-neutral-300/80">
-                                        <FaTags /> <h3>{news.publishedIn}</h3>
+                                        <Link href={news.slug} target="_blank">
+                                            <FaTags />
+                                        </Link>
+                                        <h3>
+                                            <Link
+                                                href={news.slug}
+                                                target="_blank">
+                                                {news.publishedIn}
+                                            </Link>
+                                        </h3>
                                     </div>
                                     <p className="text-neutral-300 text-sm mb-1">
-                                        {news.publishedOn}
+                                        <Link href={news.slug} target="_blank">
+                                            {news.publishedOn}
+                                        </Link>
                                     </p>
                                     <h2 className="text-base font-semibold text-neutral-100 group-hover/subSection:underline duration-150 my-2">
-                                        {news.title}
+                                        <Link href={news.slug} target="_blank">
+                                            {news.title}
+                                        </Link>
                                     </h2>
-                                    <button className=" text-base text-neutral-300 flex items-center gap-1 group-hover/subSection:gap-4 duration-150">
-                                        Read More{' '}
-                                        <span className="">{'>'}</span>
-                                    </button>
+
+                                    <Link href={news.slug} target="_blank">
+                                        <button className=" text-base text-neutral-300 flex items-center gap-1 group-hover/subSection:gap-4 duration-150">
+                                            Read More{' '}
+                                            <span className="">{'>'}</span>
+                                        </button>
+                                    </Link>
                                 </div>
                             </li>
                         ))}

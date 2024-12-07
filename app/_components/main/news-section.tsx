@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import NewsCarousel from './news-carousel';
 
 export default function NewSection() {
@@ -16,12 +17,15 @@ export default function NewSection() {
                         B2WI In the News
                     </h2>
                 </div>
-                <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-primaryColor h-12 hover:bg-[#005694] hover:text-neutral-100/80">
-                    View All Articles
-                </Button>
+
+                <Link href={'/media-coverage'}>
+                    <Button
+                        size="lg"
+                        variant="outline"
+                        className="border-primaryColor h-12 hover:bg-[#005694] hover:text-neutral-100/80">
+                        View All Articles
+                    </Button>
+                </Link>
             </div>
             <NewsCarousel />
         </section>
