@@ -63,15 +63,13 @@ export default function NewsCarousel() {
                         {carouselContentArray.map((news) => (
                             <li key={news.id} className="group relative">
                                 <figure className="w-full sm:h-[280px] h-[200px] rounded-lg">
-                                    <Link href={news.slug} target="_blank">
-                                        <Image
-                                            width={350}
-                                            height={240}
-                                            alt={news.title}
-                                            src={`/images/news/${news.imgUrl}`}
-                                            className="w-full h-full object-cover object-center rounded-lg"
-                                        />
-                                    </Link>
+                                    <Image
+                                        width={350}
+                                        height={240}
+                                        alt={news.title}
+                                        src={`/images/news/${news.imgUrl}`}
+                                        className="w-full h-full object-cover object-center rounded-lg"
+                                    />
                                 </figure>
                                 {/* news cart details */}
                                 <div className="group/subSection mt-3 absolute -bottom-64 group-hover:bottom-0 duration-200 left-0 w-full bg-[#264d88dc] rounded-b-lg p-6">
