@@ -27,16 +27,26 @@ export default function BreadcrumbSecondLink({
                     )}>
                     Home
                 </Link>
-                <MdNavigateNext />
+                <MdNavigateNext
+                    className={cn(
+                        'hover:text-primaryColor duration-150',
+                        className
+                    )}
+                />
                 <Link
                     href={secondHref}
                     className={cn(
                         'hover:text-primaryColor duration-150',
-                        activeClassName
+                        className
                     )}>
                     {secondPageTitle}
                 </Link>
-                <MdNavigateNext />
+                <MdNavigateNext
+                    className={cn(
+                        'hover:text-primaryColor duration-150',
+                        className
+                    )}
+                />
                 <Link
                     href={'#'}
                     className={cn('text-primaryColor', activeClassName)}>
