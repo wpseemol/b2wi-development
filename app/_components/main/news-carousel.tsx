@@ -1,5 +1,5 @@
 'use client';
-import { newData } from '@/lib/db/news-data';
+import { b2wiNewsData } from '@/lib/db/b2wi-news';
 import Glide from '@glidejs/glide';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -8,6 +8,8 @@ import { FaTags } from 'react-icons/fa6';
 export default function NewsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [loading, setLoading] = useState(true);
+
+    const carouselContentArray = b2wiNewsData;
 
     useEffect(() => {
         setLoading(false);
@@ -57,7 +59,7 @@ export default function NewsCarousel() {
                 {/* Slides */}
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-                        {newData.map((news) => (
+                        {carouselContentArray.map((news) => (
                             <li key={news.id} className="group relative">
                                 <figure className="w-full sm:h-[280px] h-[200px] rounded-lg">
                                     <Image
@@ -71,10 +73,10 @@ export default function NewsCarousel() {
                                 {/* news cart details */}
                                 <div className="group/subSection mt-3 absolute -bottom-64 group-hover:bottom-0 duration-200 left-0 w-full bg-[#264d88dc] rounded-b-lg p-6">
                                     <div className="flex items-center gap-1 text-xs mb-3 text-neutral-300/80">
-                                        <FaTags /> <h3>{news.publishedBy}</h3>
+                                        <FaTags /> <h3>{news.publishedIn}</h3>
                                     </div>
                                     <p className="text-neutral-300 text-sm mb-1">
-                                        {news.publishedAt}
+                                        {news.publishedOn}
                                     </p>
                                     <h2 className="text-base font-semibold text-neutral-100 group-hover/subSection:underline duration-150 my-2">
                                         {news.title}
@@ -92,7 +94,7 @@ export default function NewsCarousel() {
                 <div
                     className="flex w-full items-center justify-center gap-2 mt-4"
                     data-glide-el="controls[nav]">
-                    {newData.map((data, index) => (
+                    {carouselContentArray.map((data, index) => (
                         <button
                             key={index}
                             className={`group p-2 `}
