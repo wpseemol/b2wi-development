@@ -1,4 +1,6 @@
 'use client';
+import { HackContentType } from '@/lib/db/hacks-data';
+import { ScholarshipsDataType } from '@/lib/db/scholarships-data';
 import { SuccessStoriesType } from '@/lib/db/success-stories';
 import { usePathname } from 'next/navigation';
 import {
@@ -15,7 +17,7 @@ import {
 export default function SocialShare({
     content,
 }: {
-    content: SuccessStoriesType;
+    content: SuccessStoriesType | ScholarshipsDataType | HackContentType;
 }) {
     const pathname: string = usePathname();
 

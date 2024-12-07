@@ -76,10 +76,10 @@ export default function ScholarshipUpdatesCarousel() {
                                 <div className="ml-1 mt-3 p-3 pl-6 pb-6 ">
                                     <div className="flex items-center gap-1 text-xs mb-3 text-neutral-700/70 dark:text-neutral-400">
                                         <FaTags />{' '}
-                                        <h3>{content.publishedBy}</h3>
+                                        <h3>{content.publishedIn}</h3>
                                     </div>
                                     <p className="text-primaryColor/70 dark:text-neutral-300 text-sm mb-1">
-                                        {content.publishedAt}
+                                        {content.publishedOn}
                                     </p>
                                     <h2 className="text-base font-semibold text-[#002c4b] dark:text-neutral-100 group-hover:underline duration-150 ">
                                         {content.title}
