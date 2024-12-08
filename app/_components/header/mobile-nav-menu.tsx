@@ -18,12 +18,14 @@ export default function MobileNavMenu() {
                 {isOpen ? <IoClose /> : <IoMenu className="" />}
             </button>
             <ul
-                className={`absolute bg-slate-50 dark:bg-slate-900
-            left-0 md:top-[13rem] top-[3.2rem] w-full overflow-hidden duration-200 ${
-                isOpen
-                    ? 'border-x border-b h-fit shadow rounded-b duration-200'
-                    : 'h-0 p-0 duration-200'
-            }`}>
+                className={`absolute bg-slate-50 dark:bg-slate-900 
+             top-[3.2rem] w-screen overflow-hidden duration-200
+             left-0 z-[99] origin-bottom
+             ${
+                 isOpen
+                     ? 'border-x border-b h-fit shadow rounded-b duration-200'
+                     : 'h-0 p-0 duration-200'
+             }`}>
                 {isOpen &&
                     nevMenus.map((menu) => (
                         <li
