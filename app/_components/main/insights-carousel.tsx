@@ -1,9 +1,8 @@
 'use client';
 import { hackContents } from '@/lib/db/hacks-data';
 import Glide from '@glidejs/glide';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { FaTags } from 'react-icons/fa6';
+import InsightsCarouselCard from './insights-carousel-card';
 
 export default function InsightsCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,32 +59,10 @@ export default function InsightsCarousel() {
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                         {carouserContentArray.map((content) => (
-                            <li key={content.id} className="group">
-                                <figure className="w-full sm:h-[280px] h-[200px] rounded-lg overflow-hidden">
-                                    <Image
-                                        width={350}
-                                        height={240}
-                                        alt={content.title}
-                                        src={`/images/hack/${content.imgUrl}`}
-                                        className="w-full h-full object-cover object-center rounded-lg group-hover:scale-110 duration-200"
-                                    />
-                                </figure>
-                                <div className="ml-1 mt-3">
-                                    <div className="flex items-center gap-1 text-xs mb-3 text-neutral-100/80">
-                                        <FaTags /> <h3>{content.publishIn}</h3>
-                                    </div>
-                                    <p className="text-neutral-100/90 text-sm mb-1">
-                                        {content.publishOn}
-                                    </p>
-                                    <h2 className="text-base font-semibold text-[#fff] group-hover:underline duration-150">
-                                        {content.title}
-                                    </h2>
-                                    <button className="mt-4 text-base text-neutral-50/75 flex items-center gap-1 group-hover:gap-3 duration-150">
-                                        Read More{' '}
-                                        <span className="">{'>'}</span>
-                                    </button>
-                                </div>
-                            </li>
+                            <InsightsCarouselCard
+                                content={content}
+                                key={content.id}
+                            />
                         ))}
                     </ul>
                 </div>

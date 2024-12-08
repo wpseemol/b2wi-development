@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import InsightsCarousel from './insights-carousel';
 
 export default function InsightsSection() {
@@ -21,12 +22,14 @@ export default function InsightsSection() {
                         Read all insights
                     </Button> */}
 
-                    <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-primaryColor h-12 bg-[#005694] text-neutral-100/80 ">
-                        Read all insights
-                    </Button>
+                    <Link href={'/hacks'}>
+                        <Button
+                            size="lg"
+                            variant="outline"
+                            className="border-primaryColor h-12 bg-[#005694] text-neutral-100/80 ">
+                            Read all insights
+                        </Button>
+                    </Link>
                 </div>
 
                 <InsightsCarousel />
