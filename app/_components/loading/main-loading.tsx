@@ -2,7 +2,7 @@ export default function MainLoading() {
     return (
         <section
             className="absolute left-0 right-0 top-0 bottom-0 flex items-center justify-center w-full h-full
-        bg-white ">
+        bg-white">
             <svg
                 width="200"
                 height="200"

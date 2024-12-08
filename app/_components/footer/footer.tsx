@@ -118,7 +118,7 @@ export default function Footer() {
                         <h2 className="text-2xl font-medium pl-3 mb-5 border-l-4 border-primaryColor mx-auto w-fit md:mx-0 md:w-full">
                             Contact Us
                         </h2>
-                        <ul className="font-thin space-y-2 w-fit mx-auto md:mx-0 md:w-full">
+                        <ul className="font-thin space-y-2 mx-auto md:mx-0 md:w-full">
                             <li>
                                 <Link
                                     href="mailto:⁠b2winitiative@gmail.com"
@@ -137,7 +137,10 @@ export default function Footer() {
                                     className="flex items-center gap-3">
                                     <MdLocationPin />{' '}
                                     <p className="font-thin">
-                                        Banani, Dhaka, Bangladesh
+                                        6 (5th Floor),
+                                        <br />
+                                        2/B Baridhara J Block,
+                                        <br /> Dhaka 1212
                                     </p>
                                 </Link>
                             </li>

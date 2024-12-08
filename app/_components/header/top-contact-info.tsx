@@ -69,9 +69,9 @@ export default function TopContactInfo() {
                             <TfiLocationPin className="group-hover:scale-105 duration-100" />
                         </div>
                         <div className="text-sm">
-                            <h2 className="font-medium">
-                                Banani, Dhaka, Bangladesh
-                            </h2>
+                            <h2 className="font-medium"></h2>6 (5th Floor),
+                            <br /> 2/B Baridhara J Block,
+                            <br /> Dhaka 1212
                             <p>Find Us</p>
                         </div>
                     </Link>
