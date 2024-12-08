@@ -62,16 +62,16 @@ export default function TopContactInfo() {
 
                 <li>
                     <Link
-                        href={`https://www.google.com/maps?q=${23.7959291},${90.4231129}`}
+                        href={`https://www.google.com/maps/dir//House+No-6,+Road+No+-+2%2FB,+Baridhara+J+Block,+Dhaka+1212/@23.7953511,90.342224,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c73a91c0919d:0xd83a57adfbb498bb!2m2!1d90.4246256!2d23.795373?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D`}
                         target="_blank"
                         className="flex items-center gap-1 text-primaryColor/75 hover:text-[#0165ac] dark:text-[#4c80a5] dark:hover:text-[#6eb5e7] duration-100 group">
                         <div className="text-4xl">
                             <TfiLocationPin className="group-hover:scale-105 duration-100" />
                         </div>
                         <div className="text-sm">
-                            <h2 className="font-medium"></h2>6 (5th Floor),
-                            <br /> 2/B Baridhara J Block,
-                            <br /> Dhaka 1212
+                            <h2 className="font-medium">
+                                Baridhara, Dhaka, Bangladesh
+                            </h2>
                             <p>Find Us</p>
                         </div>
                     </Link>

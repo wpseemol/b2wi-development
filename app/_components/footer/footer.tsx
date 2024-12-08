@@ -137,10 +137,7 @@ export default function Footer() {
                                     className="flex items-center gap-3">
                                     <MdLocationPin />{' '}
                                     <p className="font-thin">
-                                        6 (5th Floor),
-                                        <br />
-                                        2/B Baridhara J Block,
-                                        <br /> Dhaka 1212
+                                        Baridhara, Dhaka, Bangladesh
                                     </p>
                                 </Link>
                             </li>
