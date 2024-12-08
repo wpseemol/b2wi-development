@@ -1,10 +1,8 @@
 'use client';
 import { scholarshipsData } from '@/lib/db/scholarships-data';
 import Glide from '@glidejs/glide';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { BsArrowRightShort } from 'react-icons/bs';
-import { FaTags } from 'react-icons/fa6';
+import ScholarshipCarouselCard from './scholarship-carousel-card';
 
 export default function ScholarshipUpdatesCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,37 +59,10 @@ export default function ScholarshipUpdatesCarousel() {
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                         {carouselContentArray.map((content) => (
-                            <li
+                            <ScholarshipCarouselCard
+                                content={content}
                                 key={content.id}
-                                className="group border border-neutral-500/10 rounded-lg ">
-                                <figure className="w-full sm:h-[280px] h-[200px] rounded-t-lg overflow-hidden">
-                                    <Image
-                                        width={350}
-                                        height={240}
-                                        alt={content.title}
-                                        src={`/images/scholarship/${content.imgUrl}`}
-                                        className="w-full h-full object-cover object-center rounded-t-lg scale-110 hover:scale-100 duration-200"
-                                    />
-                                </figure>
-                                <div className="ml-1 mt-3 p-3 pl-6 pb-6 ">
-                                    <div className="flex items-center gap-1 text-xs mb-3 text-neutral-700/70 dark:text-neutral-400">
-                                        <FaTags />{' '}
-                                        <h3>{content.publishedIn}</h3>
-                                    </div>
-                                    <p className="text-primaryColor/70 dark:text-neutral-300 text-sm mb-1">
-                                        {content.publishedOn}
-                                    </p>
-                                    <h2 className="text-base font-semibold text-[#002c4b] dark:text-neutral-100 group-hover:underline duration-150 ">
-                                        {content.title}
-                                    </h2>
-                                    <button className="mt-4 text-base text-neutral-700/75 dark:text-neutral-500 flex items-center gap-1 group-hover:gap-4 duration-150 bg-primaryColor text-white px-3 py-2 rounded">
-                                        Read More{' '}
-                                        <span className="text-2xl">
-                                            <BsArrowRightShort />
-                                        </span>
-                                    </button>
-                                </div>
-                            </li>
+                            />
                         ))}
                     </ul>
                 </div>
