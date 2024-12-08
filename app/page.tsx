@@ -1,7 +1,6 @@
 import AboutSection from './_components/main/about-section';
 import BrandingSection from './_components/main/branding-section';
 import CategorySection from './_components/main/category-section';
-import EventWorkshop from './_components/main/event-workshops';
 import HeroSection from './_components/main/hero-section';
 import InsightsSection from './_components/main/Insights-section';
 import NewSection from './_components/main/news-section';
@@ -20,7 +19,7 @@ export default function HomePage() {
             <ProjectDoneNumbering />
             <OurSkillSection />
             <TestimonialsSection />
-            <EventWorkshop />
+            {/* <EventWorkshop /> */}
             <ScholarshipUpdates />
             <InsightsSection />
             <NewSection />
