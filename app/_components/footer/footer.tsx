@@ -91,7 +91,7 @@ export default function Footer() {
                     </h2>
                     <ul className="space-y-2 capitalize md:text-left text-center">
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
-                            <Link href="#">About Us </Link>
+                            <Link href="/about-us">About Us </Link>
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
                             <Link href="#">FAQs </Link>
