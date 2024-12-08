@@ -1,6 +1,4 @@
-import MyLink from '@/components/my-link';
 import { MenuItem } from '@/types/nav-menu';
-import { IoMdArrowDropdown } from 'react-icons/io';
 import MobileNavMenu from './mobile-nav-menu';
 
 export default function NavMenu() {
@@ -8,12 +6,12 @@ export default function NavMenu() {
         <div>
             <nav className="container mx-auto flex justify-between items-center">
                 {/* menu button  */}
-                <section className="xl:hidden md:block hidden ">
+                <section className=" md:block hidden md:ml-24">
                     <MobileNavMenu />
                 </section>
                 {/* menu button  */}
 
-                <ul className="xl:flex 2xl:gap-3 gap-2 items-center text-neutral-100 text-[16px] font-medium hidden lg:tracking-tighter 2xl:tracking-normal">
+                {/* <ul className="xl:flex 2xl:gap-3 gap-2 items-center text-neutral-100 text-[16px] font-medium hidden lg:tracking-tighter 2xl:tracking-normal">
                     {nevMenus.map((menu) => {
                         return (
                             <li
@@ -52,12 +50,12 @@ export default function NavMenu() {
                             </li>
                         );
                     })}
-                </ul>
+                </ul> */}
 
                 <button
                     className="bg-transparent border-2 
-                    hover:scale-105 duration-300 hover:bg-transparent font-medium text-neutral-50 text-center text-sm md:text-base
-                border-[#1d87d3] md:px-5 px-4 md:py-3 py-2 rounded-full shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] mx-auto md:mx-0 text-nowrap lg:tracking-tighter 2xl:tracking-normal">
+                    hover:scale-105 duration-300 hover:bg-transparent font-medium text-neutral-50 text-center text-sm md:text-base md:mr-24
+                border-[#1d87d3] md:px-5 px-4 py-2 rounded-full shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] mx-auto md:mx-0 text-nowrap lg:tracking-tighter 2xl:tracking-normal">
                     BOOK CONSULTATION
                 </button>
             </nav>

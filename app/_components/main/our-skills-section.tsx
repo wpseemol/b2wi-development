@@ -11,21 +11,26 @@ export default function OurSkillSection() {
                     Get expert guidance to thrive in global careers
                 </p>
 
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
                     {skills.map((skill) => (
                         <div
                             key={skill.id}
-                            className="w-full md:h-[300px] h-[230px] rounded-2xl hover:scale-[1.01] duration-150"
-                            style={{
-                                backgroundImage: `url('/images/services/${skill.imgUrl}')`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}>
+                            className="flex justify-center items-center">
                             <div
-                                className=" w-full h-full flex items-end justify-center pb-10 text-neutral-100/90 text-2xl font-semibold rounded-2xl
+                                className="w-full md:h-[205px] h-[180px] rounded-2xl hover:scale-[1.01] duration-150 "
+                                style={{
+                                    backgroundImage: `url('/images/services/${skill.imgUrl}')`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                }}>
+                                <div
+                                    className=" w-full h-full flex items-end justify-center pb-10 text-neutral-100/90 text-2xl font-semibold rounded-2xl
                                 bg-custom-gradient
                                 ">
-                                <h2 className="text-center">{skill.title}</h2>
+                                    <h2 className="text-center">
+                                        {skill.title}
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     ))}
