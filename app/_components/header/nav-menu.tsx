@@ -6,7 +6,7 @@ export default function NavMenu() {
         <div>
             <nav className="container mx-auto flex justify-between items-center relative">
                 {/* menu button  */}
-                <section className=" md:block hidden md:ml-24">
+                <section className=" md:block hidden ml-24">
                     <MobileNavMenu />
                 </section>
                 {/* menu button  */}

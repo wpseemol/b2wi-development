@@ -1,12 +1,27 @@
 'use client';
 
 import MyLink from '@/components/my-link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
 import { nevMenus } from './nav-menu';
 
 export default function MobileNavMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    useEffect(() => {
+        if (isOpen) {
+            const handleClose = () => {
+                setIsOpen(false);
+            };
+
+            const body = document.body;
+            body.addEventListener('click', handleClose);
+
+            return () => {
+                body.removeEventListener('click', handleClose);
+            };
+        }
+    }, [isOpen]);
 
     return (
         <>
@@ -20,7 +35,7 @@ export default function MobileNavMenu() {
             <ul
                 className={`absolute bg-slate-50 dark:bg-slate-900 
              md:top-[2.5rem] top-[3rem] container overflow-hidden duration-200
-             left-0 z-[99] origin-bottom
+             right-0 z-[99] origin-bottom
              ${
                  isOpen
                      ? 'border-x border-b h-fit shadow rounded-b duration-200'
@@ -28,16 +43,15 @@ export default function MobileNavMenu() {
              }`}>
                 {isOpen &&
                     nevMenus.map((menu) => (
-                        <li
+                        <MyLink
                             key={menu.id}
-                            className="pl-3 border-b hover:translate-x-3 duration-150 py-2">
-                            <MyLink
-                                href={menu.slug}
-                                className="hover:text-primaryColor"
-                                activeClassName="text-primaryColor translate-x-3">
+                            href={menu.slug}
+                            className="hover:text-primaryColor "
+                            activeClassName="text-primaryColor translate-x-3 ">
+                            <li className="pl-3 border-b hover:translate-x-3 duration-150 py-2">
                                 {menu.name}
-                            </MyLink>
-                        </li>
+                            </li>
+                        </MyLink>
                     ))}
             </ul>
         </>
