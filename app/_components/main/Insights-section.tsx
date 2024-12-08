@@ -4,9 +4,9 @@ import InsightsCarousel from './insights-carousel';
 
 export default function InsightsSection() {
     return (
-        <section className="md:mb-16 mb-8 bg-primaryColor/55 dark:bg-[#002641de]  py-10">
+        <section className=" mb-8 bg-primaryColor/55 dark:bg-[#002641de] ">
             <div className="container mx-auto md:px-0 px-2 py-10 sm:py-7 ">
-                <div className="flex sm:flex-row flex-col justify-between sm:gap-0 gap-3 mb-10">
+                <div className="flex sm:flex-row flex-col justify-between sm:gap-0 gap-3 mb-5">
                     <div>
                         {/* <h3 className="text-2xl text-[#0976c4] font-semibold">
                         Insights & Inspirations

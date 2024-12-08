@@ -5,7 +5,7 @@ export default function AboutSection() {
     return (
         <section
             className="container mx-auto md:px-0 px-2 flex 
-        justify-center items-center lg:flex-nowrap flex-wrap md:gap-10 gap-5 md:mb-16 mb-8">
+        justify-center items-center lg:flex-nowrap flex-wrap md:gap-10 gap-5 mb-8">
             <div className="md:w-1/2 flex justify-end">
                 <figure className="w-full">
                     <Image
@@ -13,7 +13,7 @@ export default function AboutSection() {
                         width={515}
                         height={537}
                         alt="Project image"
-                        className="w-full sm:h-[530px] rounded-xl object-cover object-center"
+                        className="w-full sm:h-[380px] rounded-xl object-cover object-center"
                     />
                 </figure>
             </div>

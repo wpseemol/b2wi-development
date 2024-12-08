@@ -2,13 +2,13 @@ import CountupAnimation from './countup-animation';
 
 export default function ProjectDoneNumbering() {
     return (
-        <section className="md:mb-16 mb-8 bg-skill-numbering bg-fixed bg-center min-h-[430px] flex flex-col justify-center relative">
+        <section className="mb-8 bg-skill-numbering bg-fixed bg-center min-h-[280px] flex flex-col justify-center relative">
             <div className="container mx-auto md:px-0 px-2 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-1 relative z-10">
                 {numberWorks.map((work) => (
                     <div
                         key={work.id}
                         className="flex flex-col justify-center items-center md:py-10 py-7 cursor-pointer group">
-                        <h2 className="md:text-[69px] text-6xl font-bold text-neutral-100 group-hover:scale-105 duration-150 mb-3">
+                        <h2 className=" text-6xl font-bold text-neutral-100 group-hover:scale-105 duration-150 mb-3">
                             <CountupAnimation wNumber={work.wNumber} />
                             {work.symbol}
                         </h2>

@@ -2,9 +2,9 @@ import TestimonialSlider from './testimonial-slider';
 
 export default function TestimonialsSection() {
     return (
-        <section className="container mx-auto md:px-0 px-2 mb-20 lg:pb-0 pb-40">
-            <div className="mb-8 ">
-                <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] dark:text-neutral-100 mb-5">
+        <section className="container mx-auto md:px-0 px-2 mb-20 pb-0">
+            <div className="">
+                <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] dark:text-neutral-100 mb-4">
                     Trusted by
                     <span className="text-[#0070c0]">
                         Students and Professionals

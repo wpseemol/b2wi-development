@@ -6,7 +6,7 @@ import PointerIcon from '../../../components/svg/pointer-icon';
 export default function BrandingSection() {
     return (
         <section className="flex justify-center md:flex-row flex-col mb-8">
-            <div className=" min-h-[150px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative ">
+            <div className=" min-h-[80px] bg-primaryColor  md:w-1/2 flex items-center md:justify-end justify-center md:pr-5 relative ">
                 <div className="flex md:justify-end gap-3 justify-center w-full  md:pl-8 pl-2">
                     <span className="w-5 h-5 mt-1 ">
                         <PointerIcon />
@@ -21,7 +21,7 @@ export default function BrandingSection() {
                     </span>
                 </div>
             </div>
-            <div className=" min-h-[50px] md:w-1/2 bg-[#b1aaaa27] dark:bg-[#9e9ea1] flex items-center md:flex-row flex-col justify-center md:justify-normal">
+            <div className=" min-h-[80px] md:w-1/2 bg-[#b1aaaa27] dark:bg-[#9e9ea1] flex items-center md:flex-row flex-col justify-center md:justify-normal">
                 <div className="flex items-center md:justify-evenly justify-center gap-10 w-full">
                     {brandImages.map((bImage) => (
                         <figure
