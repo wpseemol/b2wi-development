@@ -64,13 +64,21 @@ export default function Footer() {
                     </h2>
                     <ul className="space-y-2 capitalize text-center md:text-left">
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
-                            <Link href="#">BePro</Link>
+                            <Link href="https://bepro.com.bd/" target="_blank">
+                                BePro
+                            </Link>
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
-                            <Link href="#">GEE</Link>
+                            <Link
+                                href="https://globaleduexp.com/"
+                                target="_blank">
+                                GEE
+                            </Link>
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
-                            <Link href="#">FLY8</Link>
+                            <Link href="https://fly8.info/" target="_blank">
+                                FLY8
+                            </Link>
                         </li>
                     </ul>
                 </div>
