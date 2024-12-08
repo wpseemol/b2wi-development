@@ -4,7 +4,7 @@ import MobileNavMenu from './mobile-nav-menu';
 export default function NavMenu() {
     return (
         <div>
-            <nav className="container mx-auto flex justify-between items-center">
+            <nav className="container mx-auto flex justify-between items-center relative">
                 {/* menu button  */}
                 <section className=" md:block hidden md:ml-24">
                     <MobileNavMenu />
