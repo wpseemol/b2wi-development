@@ -40,7 +40,7 @@ export default function TopContactInfo() {
                         </div>
                         <div className="text-sm">
                             <h2 className="font-medium">+8801685456708</h2>
-                            <p>{`Student's Inquiries`}</p>
+                            <p className="text-xs">{`Student's Inquiries`}</p>
                         </div>
                     </Link>
                 </li>
@@ -55,7 +55,7 @@ export default function TopContactInfo() {
                             <h2 className="font-medium">
                                 ⁠b2winitiative@gmail.com
                             </h2>
-                            <p>Get in touch</p>
+                            <p className="text-xs">Get in touch</p>
                         </div>
                     </Link>
                 </li>
@@ -72,7 +72,7 @@ export default function TopContactInfo() {
                             <h2 className="font-medium">
                                 Baridhara, Dhaka, Bangladesh
                             </h2>
-                            <p>Find Us</p>
+                            <p className="text-xs">Find Us</p>
                         </div>
                     </Link>
                 </li>
