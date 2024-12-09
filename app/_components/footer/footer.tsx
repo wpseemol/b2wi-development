@@ -123,7 +123,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="mt-5">
-                        <h2 className="text-2xl font-medium pl-3 mb-5 border-l-4 border-primaryColor mx-auto w-fit md:mx-0 md:w-full">
+                        <h2 className="text-2xl font-medium pl-3 mb-5 border-l-4 border-primaryColor mx-auto w-fit md:mx-0 ">
                             Contact Us
                         </h2>
                         <ul className="font-thin space-y-2 mx-auto md:mx-0 md:w-full">
@@ -140,7 +140,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="mailto:⁠b2winitiative@gmail.com"
+                                    href="https://www.google.com/maps/dir//House+No-6,+Road+No+-+2%2FB,+Baridhara+J+Block,+Dhaka+1212/@23.7953511,90.342224,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c73a91c0919d:0xd83a57adfbb498bb!2m2!1d90.4246256!2d23.795373?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     className="flex items-center gap-3">
                                     <MdLocationPin />{' '}
