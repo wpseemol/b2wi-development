@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookSquare, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { HiPhone } from 'react-icons/hi';
 import { MdLocationPin } from 'react-icons/md';
-import { PiInstagramLogoLight } from 'react-icons/pi';
 import { VscMail } from 'react-icons/vsc';
 import EmailSendButton from './email-send-input';
+import FooterSocialMedia from './footer-socialmedia';
 
 export default function Footer() {
     return (
@@ -23,38 +22,13 @@ export default function Footer() {
                             className="w-auto h-auto"
                         />
                     </figure>
-                    <p className="text-base text-center md:text-left">
+                    {/* <p className="text-base text-center md:text-left">
                         Unlock your potential with Empower Minds—your trusted
                         partner in turning study abroad dreams into reality.
-                    </p>
+                    </p> */}
 
-                    <div className="mt-3">
-                        <h2 className="text-2xl font-medium md:text-left text-center">
-                            Follow Us
-                        </h2>
-                        <div className="flex md:justify-normal justify-center items-center gap-5 text-lg mt-1 text-neutral-100/80">
-                            <Link
-                                href="#"
-                                className="hover:text-neutral-50 duration-100 hover:scale-105">
-                                <FaFacebookSquare />
-                            </Link>
-                            <Link
-                                href="#"
-                                className="hover:text-neutral-50 duration-100 hover:scale-105">
-                                <PiInstagramLogoLight />
-                            </Link>
-                            <Link
-                                href="#"
-                                className="hover:text-neutral-50 duration-100 hover:scale-105">
-                                <FaLinkedinIn />
-                            </Link>
-                            <Link
-                                href="#"
-                                className="hover:text-neutral-50 duration-100 hover:scale-105">
-                                <FaYoutube />
-                            </Link>
-                        </div>
-                    </div>
+                    {/* footer social media section */}
+                    <FooterSocialMedia />
                 </div>
                 {/* site inform */}
                 {/* some link */}
