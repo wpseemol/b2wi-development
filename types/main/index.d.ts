@@ -9,7 +9,8 @@ export type MyLinkType = {
 
 export type BrandImages = {
     id: number;
-    url: string;
+    slug: string;
+    imgUrl: string;
     name: string;
 };
 

@@ -1,6 +1,7 @@
 import WorldIcon from '@/components/svg/world-icon';
 import { BrandImages } from '@/types/main';
 import Image from 'next/image';
+import Link from 'next/link';
 import PointerIcon from '../../../components/svg/pointer-icon';
 
 export default function BrandingSection() {
@@ -27,13 +28,15 @@ export default function BrandingSection() {
                         <figure
                             key={bImage.id}
                             className="max-w-full h-[48px] group">
-                            <Image
-                                src={`/images/${bImage.url}`}
-                                alt={bImage.name}
-                                width={224}
-                                height={80}
-                                className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition "
-                            />
+                            <Link href={bImage.slug}>
+                                <Image
+                                    src={`/images/${bImage.imgUrl}`}
+                                    alt={bImage.name}
+                                    width={224}
+                                    height={80}
+                                    className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition "
+                                />
+                            </Link>
                         </figure>
                     ))}
                 </div>
@@ -45,13 +48,15 @@ export default function BrandingSection() {
 const brandImages: BrandImages[] = [
     {
         id: 1,
-        url: 'brand-1.png',
+        slug: 'https://bepro.com.bd/',
+        imgUrl: 'brand-1.png',
         name: 'be pro',
     },
     {
         id: 2,
-        url: 'brand-2.png',
+        slug: 'https://globaleduexp.com/',
+        imgUrl: 'brand-2.png',
         name: 'global education expert',
     },
-    { id: 3, url: 'brand-3.png', name: 'edu' },
+    { id: 3, slug: 'https://fly8.info/', imgUrl: 'brand-3.png', name: 'edu' },
 ];
