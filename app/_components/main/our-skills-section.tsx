@@ -43,31 +43,37 @@ export default function OurSkillSection() {
 const skills: skills[] = [
     {
         id: 1,
+        slug: 'how-does-b2wi-help',
         imgUrl: 'University Research Assistance 1.png',
         title: 'University Research Assistance',
     },
     {
         id: 2,
+        slug: 'how-does-b2wi-help',
         imgUrl: 'Profile Assessment 2.png',
         title: 'Profile Assessment',
     },
     {
         id: 3,
+        slug: 'how-does-b2wi-help',
         imgUrl: 'SOP Review 3.png',
         title: 'SOP Review ',
     },
     {
         id: 4,
+        slug: 'how-does-b2wi-help',
         imgUrl: 'LOR Review 4.png',
         title: 'LOR Review ',
     },
     {
         id: 5,
+        slug: 'how-does-b2wi-help',
         imgUrl: 'Visa Application Review 5.png',
         title: 'Visa Application Review ',
     },
     {
         id: 6,
+        slug: 'how-does-b2wi-help',
         imgUrl: 'Accommodation Assistance 6.png',
         title: 'Accommodation Assistance',
     },
@@ -106,6 +112,7 @@ const skills: skills[] = [
 
 interface skills {
     id: number | string;
+    slug: string;
     imgUrl: string;
     title: string;
 }
