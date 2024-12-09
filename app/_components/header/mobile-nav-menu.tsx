@@ -34,8 +34,8 @@ export default function MobileNavMenu() {
             </button>
             <ul
                 className={`absolute bg-slate-50 dark:bg-slate-900 
-             md:top-[2.5rem] top-[3rem] container overflow-hidden duration-200
-             right-0 z-[99] origin-bottom
+             md:top-[2.5rem] top-[3rem] w-[12rem] overflow-hidden duration-200 md:left-20 
+             right-10 z-[99] origin-bottom
              ${
                  isOpen
                      ? 'border-x border-b h-fit shadow rounded-b duration-200'
