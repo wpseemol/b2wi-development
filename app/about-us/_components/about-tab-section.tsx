@@ -26,7 +26,7 @@ export default function AboutTabSection() {
                 Our<span className="text-primaryColor"> Story</span>
             </h2>
 
-            <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap  dark:text-gray-800 border-b relative z-0 dark:bg-transparent">
+            <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap  dark:text-gray-800 border-b border-black relative z-0 dark:bg-transparent">
                 {ourStoryContent.map((story) => (
                     <Fragment key={story.id}>
                         <button
@@ -34,7 +34,7 @@ export default function AboutTabSection() {
                             onClick={() => setSelectedStory(story.id)}
                             className={`${
                                 selectedStory === story.id
-                                    ? 'border border-b-0 rounded-t-lg'
+                                    ? 'border border-black border-b-0 rounded-t-lg font-semibold'
                                     : 'border border-transparent'
                             } flex items-center flex-shrink-0 sm:px-5 px-2 py-3 space-x-2 dark:text-gray-400 relative sm:text-base text-sm `}>
                             {selectedStory === story.id && (

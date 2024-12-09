@@ -34,19 +34,19 @@ export const peopleBehind: PeopleBehind[] = [
     },
     {
         id: 5,
-        name: 'Muhaiminul Islam Antik',
-        socialLink: 'https://www.linkedin.com/in/muhaiminul-islam-ig/',
-        imageUrl: 'Muhaiminul-Islam.png',
-        description:
-            '<p>An experienced professional in content development, marketing, and international education, Muhaiminul Islam is dedicated to empowering students and youth to thrive academically and professionally. With expertise in content creation, social media management, demand generation, and strategic marketing, he has successfully driven engagement and growth across diverse organizations. Muhaiminul’s commitment to skill development and global connections aligns seamlessly with the mission of fostering educational success and international representation.</p>',
-    },
-    {
-        id: 6,
         name: 'Sameer Ghazi Rahman',
         socialLink: 'https://www.linkedin.com/in/sgr1981/',
         imageUrl: 'Sameer Ghazi Rahman image.png',
         description:
             '<p>Managing Director of Sunshine Education Bangladesh Western Australia (SEBWA), Principal at Sunshine Grammar School, and Founder & CEO of Global Education Expert, Sameer brings extensive expertise in international education and student counseling. With a deep understanding of education management and global study placements, he plays a pivotal role at B2WI in guiding Bangladeshi students through their academic journeys abroad. His leadership and strategic insights in study and job placements empower students to represent Bangladesh on the global stage, in line with B2WI’s mission of building a network of Bangladeshi leaders worldwide.</p>',
+    },
+    {
+        id: 6,
+        name: 'Muhaiminul Islam Antik',
+        socialLink: 'https://www.linkedin.com/in/muhaiminul-islam-ig/',
+        imageUrl: 'Muhaiminul-Islam.png',
+        description:
+            '<p>An experienced professional in content development, marketing, and international education, Muhaiminul Islam is dedicated to empowering students and youth to thrive academically and professionally. With expertise in content creation, social media management, demand generation, and strategic marketing, he has successfully driven engagement and growth across diverse organizations. Muhaiminul’s commitment to skill development and global connections aligns seamlessly with the mission of fostering educational success and international representation.</p>',
     },
 ];
 
