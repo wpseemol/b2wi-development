@@ -23,7 +23,7 @@ export default function NewSection() {
                         size="lg"
                         variant="outline"
                         className="border-primaryColor h-12 hover:bg-[#005694] hover:text-neutral-100/80">
-                        View All Articles
+                        View All
                     </Button>
                 </Link>
             </div>

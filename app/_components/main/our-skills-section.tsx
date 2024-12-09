@@ -24,7 +24,7 @@ export default function OurSkillSection() {
                                     backgroundPosition: 'center',
                                 }}>
                                 <div
-                                    className=" w-full h-full flex items-end justify-center pb-10 text-neutral-100/90 text-2xl font-semibold rounded-2xl
+                                    className=" w-full h-full flex items-end justify-center pb-6 text-neutral-100/90 text-2xl font-semibold rounded-2xl
                                 bg-custom-gradient
                                 ">
                                     <h2 className="text-center">

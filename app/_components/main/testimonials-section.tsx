@@ -7,12 +7,13 @@ export default function TestimonialsSection() {
                 <h2 className="text-center sm:text-[40px] sm:font-bold text-4xl font-semibold text-[#00355a] dark:text-neutral-100 mb-4">
                     Trusted by
                     <span className="text-[#0070c0]">
+                        {' '}
                         Students and Professionals
                     </span>
                 </h2>
-                <p className="text-center text-neutral-700/85 dark:text-neutral-300 font-medium text-base">
+                {/* <p className="text-center text-neutral-700/85 dark:text-neutral-300 font-medium text-base">
                     A deep commitment to diversity and inclusion
-                </p>
+                </p> */}
             </div>
             <div className="relative max-h-[350px]">
                 <TestimonialSlider />
