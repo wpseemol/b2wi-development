@@ -1,3 +1,5 @@
+import SubjectDropdown from './subject-dropdown';
+
 export default function SendMessageSection() {
     return (
         <div className=" md:col-span-2  h-full md:p-5 md:pb-0 p-2 pb-0">
@@ -31,14 +33,9 @@ export default function SendMessageSection() {
                     className="border focus-visible:outline-none p-3"
                     required
                 />
-                <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    className="border focus-visible:outline-none p-3"
-                    required
-                />
+
+                <SubjectDropdown />
+
                 <textarea
                     name="your-message"
                     id="your-message"
