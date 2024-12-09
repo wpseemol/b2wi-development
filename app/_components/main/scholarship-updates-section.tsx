@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import AllScholarshipUpdatesBtn from './all-scholarship-updates-btn';
 import ScholarshipUpdatesCarousel from './scholarship-updates-carousel';
 
 export default function ScholarshipUpdates() {
@@ -17,14 +16,10 @@ export default function ScholarshipUpdates() {
                         Scholarship Updates
                     </h2>
                 </div>
-                <Link href="/scholarships">
-                    <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-primaryColor h-12 hover:bg-[#005694] hover:text-neutral-100/80">
-                        Read all Scholarship Updates
-                    </Button>
-                </Link>
+                {/* button link direct */}
+                <AllScholarshipUpdatesBtn>
+                    Read all Scholarship Updates
+                </AllScholarshipUpdatesBtn>
             </div>
             {/* slider section */}
             <ScholarshipUpdatesCarousel />
