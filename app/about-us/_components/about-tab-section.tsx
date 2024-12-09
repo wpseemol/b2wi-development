@@ -23,7 +23,7 @@ export default function AboutTabSection() {
     return (
         <section className="my-10">
             <h2 className="text-neutral-900/85 dark:text-white sm:text-[52px] text-3xl font-bold leading-snug text-center mb-4">
-                Our<span className="text-primaryColor"> Story</span>.
+                Our<span className="text-primaryColor"> Story</span>
             </h2>
 
             <div className="flex items-center sm:-mx-4 mx-0 justify-center sm:flex-nowrap flex-wrap  dark:text-gray-800 border-b relative z-0 dark:bg-transparent">

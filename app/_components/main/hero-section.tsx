@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function HeroSection() {
     return (
         <section className="bg-hero-pattern bg-right-top bg-no-repeat bg-cover bg-[#8a3f3fb2] -mt-1">
@@ -27,11 +29,13 @@ export default function HeroSection() {
                                 Life Coach in Bangladesh
                             </p>
                         </div> */}
-                        <button
-                            type="submit"
-                            className="flex justify-center items-center bg-primaryColor/85 duration-150 px-6 py-4 rounded-sm gap-1 font-medium hover:bg-neutral-100/85 border border-[#013f6b] hover:text-neutral-900/90 hover:font-medium hover:border-neutral-900/90">
-                            Learn More
-                        </button>
+                        <Link href={'/about-us'}>
+                            <button
+                                type="submit"
+                                className="flex justify-center items-center bg-primaryColor/85 duration-150 px-6 py-4 rounded-sm gap-1 font-medium hover:bg-neutral-100/85 border border-[#013f6b] hover:text-neutral-900/90 hover:font-medium hover:border-neutral-900/90">
+                                Learn More
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

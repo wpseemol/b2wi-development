@@ -1,23 +1,24 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutSection() {
     return (
         <section
             className="container mx-auto md:px-0 px-2 flex 
         justify-center items-center lg:flex-nowrap flex-wrap md:gap-10 gap-5 mb-8">
-            <div className="md:w-1/2 flex justify-end">
+            <div className="md:w-[30rem] flex justify-end">
                 <figure className="w-full">
                     <Image
                         src="/images/About Us - Home Page.png"
                         width={515}
                         height={537}
                         alt="Project image"
-                        className="w-full sm:h-[380px] rounded-xl object-cover object-center"
+                        className="w-full sm:h-[300px] rounded-xl object-cover object-center"
                     />
                 </figure>
             </div>
-            <div className="md:w-1/2 space-y-5">
+            <div className="md:w-[30rem] space-y-5">
                 <h2 className="sm:text-4xl text-3xl font-bold text-[#024f86] sm:text-left text-center">
                     About Us
                 </h2>
@@ -35,12 +36,14 @@ export default function AboutSection() {
                     </p>
                 </div>
                 <div className="flex sm:justify-normal justify-center items-center ">
-                    <Button
-                        size="lg"
-                        variant="default"
-                        className="bg-primaryColor/80 h-12 hover:bg-neutral-100/90 w-fit dark:text-neutral-100/80 text-neutral-100 hover:text-neutral-900/90 border border-[#0e588d] hover:border-neutral-900/90 ">
-                        Learn More
-                    </Button>
+                    <Link href="/about-us">
+                        <Button
+                            size="lg"
+                            variant="default"
+                            className="bg-primaryColor/80 h-12 hover:bg-neutral-100/90 w-fit dark:text-neutral-100/80 text-neutral-100 hover:text-neutral-900/90 border border-[#0e588d] hover:border-neutral-900/90 ">
+                            Learn More
+                        </Button>
+                    </Link>
                     {/* <Button
                         size="lg"
                         variant="outline"
