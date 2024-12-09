@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { FaFacebookSquare, FaYoutube } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
-import { PiInstagramLogoLight } from 'react-icons/pi';
 import { ModeToggle } from './mode-toggle';
 
 export default function TopMenu() {
@@ -17,25 +16,27 @@ export default function TopMenu() {
 
                     {/* Social icons */}
                     <Link
-                        href="#"
+                        href="https://www.facebook.com/profile.php?id=61568110844377"
+                        target="_black"
                         className="hover:text-primaryColor duration-100 hover:scale-105">
                         <FaFacebookSquare />
                     </Link>
-                    <Link
+                    {/* <Link
                         href="#"
                         className="hover:text-primaryColor duration-100 hover:scale-105">
                         <PiInstagramLogoLight />
-                    </Link>
+                    </Link> */}
                     <Link
-                        href="#"
+                        href="https://www.linkedin.com/company/b2wi-bangladesh-to-the-world-initiative/about/?viewAsMember=true%20"
+                        target="_black"
                         className="hover:text-primaryColor duration-100 hover:scale-105">
                         <FaLinkedinIn />
                     </Link>
-                    <Link
+                    {/* <Link
                         href="#"
                         className="hover:text-primaryColor duration-100 hover:scale-105">
                         <FaYoutube />
-                    </Link>
+                    </Link> */}
                     {/* Social icons */}
                 </div>
             </div>

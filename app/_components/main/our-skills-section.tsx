@@ -1,3 +1,5 @@
+import OurSkillButton from './our-skill-button';
+
 export default function OurSkillSection() {
     return (
         <section className="container mx-auto md:px-0 px-2 mb-8">
@@ -13,9 +15,7 @@ export default function OurSkillSection() {
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
                     {skills.map((skill) => (
-                        <div
-                            key={skill.id}
-                            className="flex justify-center items-center">
+                        <OurSkillButton key={skill.id} slug={skill.slug}>
                             <div
                                 className="w-full md:h-[205px] h-[180px] rounded-2xl hover:scale-[1.01] duration-150 "
                                 style={{
@@ -32,7 +32,7 @@ export default function OurSkillSection() {
                                     </h2>
                                 </div>
                             </div>
-                        </div>
+                        </OurSkillButton>
                     ))}
                 </div>
             </div>
@@ -43,37 +43,37 @@ export default function OurSkillSection() {
 const skills: skills[] = [
     {
         id: 1,
-        slug: 'how-does-b2wi-help',
+        slug: 'how-do-we-help',
         imgUrl: 'University Research Assistance 1.png',
         title: 'University Research Assistance',
     },
     {
         id: 2,
-        slug: 'how-does-b2wi-help',
+        slug: 'how-do-we-help',
         imgUrl: 'Profile Assessment 2.png',
         title: 'Profile Assessment',
     },
     {
         id: 3,
-        slug: 'how-does-b2wi-help',
+        slug: 'how-do-we-help',
         imgUrl: 'SOP Review 3.png',
         title: 'SOP Review ',
     },
     {
         id: 4,
-        slug: 'how-does-b2wi-help',
+        slug: 'how-do-we-help',
         imgUrl: 'LOR Review 4.png',
         title: 'LOR Review ',
     },
     {
         id: 5,
-        slug: 'how-does-b2wi-help',
+        slug: 'how-do-we-help',
         imgUrl: 'Visa Application Review 5.png',
         title: 'Visa Application Review ',
     },
     {
         id: 6,
-        slug: 'how-does-b2wi-help',
+        slug: 'how-do-we-help',
         imgUrl: 'Accommodation Assistance 6.png',
         title: 'Accommodation Assistance',
     },
