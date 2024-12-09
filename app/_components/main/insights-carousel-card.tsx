@@ -1,6 +1,7 @@
 import { HackContentType } from '@/lib/db/hacks-data';
 import Image from 'next/image';
 import Link from 'next/link';
+import { BsArrowRightShort } from 'react-icons/bs';
 import { FaTags } from 'react-icons/fa6';
 
 export default function InsightsCarouselCard({
@@ -44,8 +45,11 @@ export default function InsightsCarouselCard({
                 </Link>
 
                 <Link href={hrefSlug}>
-                    <button className="mt-4 text-base text-neutral-50/75 flex items-center gap-1 group-hover:gap-3 duration-150">
-                        Read More <span className="">{'>'}</span>
+                    <button className="mt-4 text-base text-primaryColor flex items-center gap-1 group-hover:gap-3 duration-150 border px-3 py-2 rounded-md bg-neutral-100/90 border-primaryColor">
+                        Read More{' '}
+                        <span className="">
+                            <BsArrowRightShort className="text-2xl" />
+                        </span>
                     </button>
                 </Link>
             </div>

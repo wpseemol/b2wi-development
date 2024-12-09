@@ -36,12 +36,12 @@ export default function AboutSection() {
                     </p>
                 </div>
                 <div className="flex sm:justify-normal justify-center items-center ">
-                    <Link href="/about-us">
+                    <Link href="/assessment">
                         <Button
                             size="lg"
                             variant="default"
                             className="bg-primaryColor/80 h-12 hover:bg-neutral-100/90 w-fit dark:text-neutral-100/80 text-neutral-100 hover:text-neutral-900/90 border border-[#0e588d] hover:border-neutral-900/90 ">
-                            Learn More
+                            Free Assessment
                         </Button>
                     </Link>
                     {/* <Button

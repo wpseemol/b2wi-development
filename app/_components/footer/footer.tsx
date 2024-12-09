@@ -151,7 +151,14 @@ export default function Footer() {
             </section> */}
             <section className="container mx-auto border-t ">
                 <p className="text-center md:py-5 py-3 text-base">
-                    Copyright ©2024 B2W Initiative. Developed by YSI Bangla Ltd.{' '}
+                    Copyright ©2024 B2W Initiative. Developed by
+                    <Link
+                        href={'https://it.ysibangla.com/'}
+                        target="_blank"
+                        className="underline ">
+                        {' '}
+                        YSI Bangla Ltd.
+                    </Link>
                 </p>
             </section>
         </footer>
