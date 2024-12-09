@@ -88,15 +88,7 @@ export default function Footer() {
 
                 {/* Quick Links */}
                 <div className="xl:w-[calc(25%-3.5rem)] md:w-1/4 w-full xl:px-5">
-                    <div>
-                        <h2 className="text-2xl font-medium md:mb-5 mb-2 md:text-left text-center">
-                            What are you looking for?
-                        </h2>
-                        <div>
-                            <EmailSendButton />
-                        </div>
-                    </div>
-                    <div className="mt-5">
+                    <div className="">
                         <h2 className="text-2xl font-medium pl-3 mb-5 border-l-4 border-primaryColor mx-auto w-fit md:mx-0 ">
                             Contact Us
                         </h2>
@@ -133,6 +125,15 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+
+                    <div className="mt-5">
+                        {/* <h2 className="text-2xl font-medium md:mb-5 mb-2 md:text-left text-center">
+                            What are you looking for?
+                        </h2> */}
+                        <div>
+                            <EmailSendButton />
+                        </div>
                     </div>
                 </div>
                 {/* Quick Links */}
