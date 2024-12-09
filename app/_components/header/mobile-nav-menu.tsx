@@ -1,27 +1,27 @@
 'use client';
 
 import MyLink from '@/components/my-link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
 import { nevMenus } from './nav-menu';
 
 export default function MobileNavMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
-    useEffect(() => {
-        if (isOpen) {
-            const handleClose = () => {
-                setIsOpen(false);
-            };
+    // useEffect(() => {
+    //     if (isOpen) {
+    //         const handleClose = () => {
+    //             setIsOpen(false);
+    //         };
 
-            const body = document.body;
-            body.addEventListener('click', handleClose);
+    //         const body = document.body;
+    //         body.addEventListener('click', handleClose);
 
-            return () => {
-                body.removeEventListener('click', handleClose);
-            };
-        }
-    }, [isOpen]);
+    //         return () => {
+    //             body.removeEventListener('click', handleClose);
+    //         };
+    //     }
+    // }, [isOpen]);
 
     return (
         <>
@@ -48,7 +48,11 @@ export default function MobileNavMenu() {
                             href={menu.slug}
                             className="hover:text-primaryColor "
                             activeClassName="text-primaryColor translate-x-3 ">
-                            <li className="pl-3 border-b hover:translate-x-3 duration-150 py-2">
+                            <li
+                                onClick={() => {
+                                    setIsOpen(false);
+                                }}
+                                className="pl-3 border-b hover:translate-x-3 duration-150 py-2">
                                 {menu.name}
                             </li>
                         </MyLink>
