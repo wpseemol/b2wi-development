@@ -33,7 +33,7 @@ export default function OurMissionVision() {
                                 />
                             </svg>
                         </summary>
-                        <p className="mt-4 text-slate-500">
+                        <p className="mt-4 text-slate-700">
                             At B2W, our mission is not just about helping
                             students pursue higher education abroad—it’s about
                             creating a global network of Bangladeshi leaders who
@@ -63,7 +63,7 @@ export default function OurMissionVision() {
                                 />
                             </svg>
                         </summary>
-                        <p className="mt-4 text-slate-500">
+                        <p className="mt-4 text-slate-700">
                             Our vision is to help students rise to new heights
                             while showcasing the talent and potential of
                             Bangladesh in the global academic and professional
@@ -93,7 +93,7 @@ export default function OurMissionVision() {
                                 />
                             </svg>
                         </summary>
-                        <p className="mt-4 text-slate-500">
+                        <p className="mt-4 text-slate-700">
                             We believe that through continuous support, from
                             profile assessment guidance to university selection
                             to settling down abroad, we can help students

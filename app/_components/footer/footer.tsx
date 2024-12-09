@@ -93,35 +93,37 @@ export default function Footer() {
                             Contact Us
                         </h2>
                         <ul className="font-thin space-y-2 mx-auto md:mx-0 md:w-full">
-                            <li>
+                            <li className="group">
                                 <Link
                                     href="mailto:⁠b2winitiative@gmail.com"
                                     target="_blank"
                                     className="flex items-center gap-3">
-                                    <VscMail />{' '}
-                                    <p className="font-thin">
+                                    <VscMail className="group-hover:scale-125 group-hover:shadow-md duration-150" />{' '}
+                                    <p className="font-thin text-sm">
                                         ⁠b2winitiative@gmail.com
                                     </p>
                                 </Link>
                             </li>
-                            <li>
+                            <li className="group">
                                 <Link
                                     href="https://www.google.com/maps/dir//House+No-6,+Road+No+-+2%2FB,+Baridhara+J+Block,+Dhaka+1212/@23.7953511,90.342224,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c73a91c0919d:0xd83a57adfbb498bb!2m2!1d90.4246256!2d23.795373?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     className="flex items-center gap-3">
-                                    <MdLocationPin />{' '}
-                                    <p className="font-thin">
+                                    <MdLocationPin className="group-hover:scale-125 group-hover:shadow-md duration-150" />{' '}
+                                    <p className="font-thin text-sm">
                                         Baridhara, Dhaka, Bangladesh
                                     </p>
                                 </Link>
                             </li>
-                            <li>
+                            <li className="group">
                                 <Link
                                     href="tel:+8801685456708"
                                     target="_blank"
                                     className="flex items-center gap-3">
-                                    <HiPhone />{' '}
-                                    <p className="font-thin">+8801685456708</p>
+                                    <HiPhone className="group-hover:scale-125 group-hover:shadow-md duration-150" />{' '}
+                                    <p className="font-thin text-sm">
+                                        +8801685456708
+                                    </p>
                                 </Link>
                             </li>
                         </ul>
@@ -151,12 +153,11 @@ export default function Footer() {
             </section> */}
             <section className="container mx-auto border-t ">
                 <p className="text-center md:py-5 py-3 text-base">
-                    Copyright ©2024 B2W Initiative. Developed by
+                    Copyright ©2024 B2W Initiative. Developed by{' '}
                     <Link
                         href={'https://it.ysibangla.com/'}
                         target="_blank"
-                        className="underline ">
-                        {' '}
+                        className="underline underline-offset-2">
                         YSI Bangla Ltd.
                     </Link>
                 </p>
