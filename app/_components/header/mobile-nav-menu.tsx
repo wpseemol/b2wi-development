@@ -8,21 +8,6 @@ import { nevMenus } from './nav-menu';
 export default function MobileNavMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
-    // useEffect(() => {
-    //     if (isOpen) {
-    //         const handleClose = () => {
-    //             setIsOpen(false);
-    //         };
-
-    //         const body = document.body;
-    //         body.addEventListener('click', handleClose);
-
-    //         return () => {
-    //             body.removeEventListener('click', handleClose);
-    //         };
-    //     }
-    // }, [isOpen]);
-
     return (
         <>
             <button

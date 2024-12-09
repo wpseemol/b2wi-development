@@ -21,7 +21,6 @@ const config: Config = {
                 'alex-brush': ['"Alex Brush"', 'sans-serif'],
             },
             backgroundImage: {
-                'hero-pattern': "url('/images/1.png')",
                 'skill-numbering': "url('/images/Image3@2x.jpg')",
                 'custom-gradient':
                     'linear-gradient(rgb(1 30 51 / 17%) 35%, rgb(86 86 126 / 35%) 40%, rgb(0 63 108) 95%)',

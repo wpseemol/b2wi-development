@@ -1,6 +1,6 @@
 import BreadcrumbFirstLink from '@/components/breadcrumb-first-link';
 import HelpCategory from './_components/help-category';
-import HelpSectionTabView from './_components/help-section-tabview';
+// import HelpSectionTabView from './_components/help-section-tabview';
 
 export default function HowDoWeHelpPage() {
     return (
@@ -9,7 +9,7 @@ export default function HowDoWeHelpPage() {
                 <BreadcrumbFirstLink currentPageName="How Do We Help" />
             </section>
 
-            <section className="text-center py-5 container mx-auto">
+            <section className="text-center py-5 mb-5 container mx-auto">
                 <h2 className="text-neutral-900/85 sm:text-[52px] text-3xl font-bold leading-snug">
                     How Do We
                     <span className="text-primaryColor"> Help</span>
@@ -21,7 +21,7 @@ export default function HowDoWeHelpPage() {
                 </p>
             </section>
             <HelpCategory />
-            <HelpSectionTabView />
+            {/* <HelpSectionTabView /> */}
         </main>
     );
 }
