@@ -68,7 +68,7 @@ export default function Footer() {
                             <Link href="/about-us">About Us </Link>
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
-                            <Link href="#">FAQs </Link>
+                            <Link href="/faq">FAQs </Link>
                         </li>
                         <li className="hover:translate-x-2 hover:text-primaryColor duration-150">
                             <Link href="#">Privacy Policy</Link>
