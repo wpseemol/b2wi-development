@@ -61,7 +61,9 @@ export default function NewsCarousel() {
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                         {carouselContentArray.map((news) => (
-                            <li key={news.id} className="group relative">
+                            <li
+                                key={news.id}
+                                className="group relative border rounded-lg">
                                 <figure className="w-full sm:h-[280px] h-[200px] rounded-lg">
                                     <Image
                                         width={350}
