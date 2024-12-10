@@ -4,7 +4,9 @@ export default function ProjectDoneNumbering() {
     return (
         <section
             className="mb-8 bg-fixed bg-center min-h-[280px] flex flex-col justify-center relative"
-            style={{ backgroundImage: `url('/images/Image3@2x.jpg')` }}>
+            style={{
+                backgroundImage: `url("/images/Image-number-section32x.jpg")`,
+            }}>
             <div className="container mx-auto md:px-0 px-2 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-1 gap-1 relative z-10">
                 {numberWorks.map((work) => (
                     <div
