@@ -8,7 +8,7 @@ export default function HelpCategoryCard({
 }) {
     return (
         <div className="relative flex justify-center group/a">
-            <div className="group border border-black/50 rounded-md hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-200 relative 2xl:h-[265px] sm:h-[300px] h-[240px] hover:h-fit overflow-hidden max-w-[305px] sm:max-w-[380px] md:max-w-[350px]">
+            <div className="group border border-black/50 rounded-md hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] duration-200 relative 2xl:h-[265px] sm:h-[300px] h-[240px] hover:h-fit overflow-hidden max-w-[305px] sm:max-w-[380px] md:max-w-[350px] lg:max-w-[390px]">
                 <figure>
                     <Image
                         src={`/images/how-does-help/${content.imageUrl}`}
