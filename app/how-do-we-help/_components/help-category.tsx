@@ -8,7 +8,7 @@ export default function HelpCategory() {
                 <h3></h3>
             </div> */}
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7">
+            <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 2xl:gap-x-5 2xl:gap-y-5 gap-x-5 gap-y-7 px-2 sm:px-0">
                 {categoryHelp.map((category) => (
                     <HelpCategoryCard key={category.id} content={category} />
                 ))}
