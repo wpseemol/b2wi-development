@@ -1,16 +1,17 @@
 import BreadcrumbFirstLink from '@/components/breadcrumb-first-link';
-import SuccessStoriesContent from './_components/success-stories-content';
+import { FaqAccordion } from './_components/faq-accordion';
 
-export default function SuccessStoriesPage() {
+export default function FaqPage() {
     return (
         <main>
             <section className="container mx-auto">
-                <BreadcrumbFirstLink currentPageName="Success Stories" />
+                <BreadcrumbFirstLink currentPageName="FAQ" />
             </section>
 
             <section className="text-center py-5 container mx-auto">
                 <h2 className="text-neutral-900/85 dark:text-white sm:text-[52px] text-3xl font-bold leading-snug">
-                    <span className="text-primaryColor">Success</span> Stories
+                    Frequently Asked{' '}
+                    <span className="text-primaryColor">Questions</span>
                 </h2>
                 {/* <p className="font-normal text-neutral-800/80">
                     Take advantage of the experiential-learning opportunities
@@ -18,8 +19,9 @@ export default function SuccessStoriesPage() {
                     built into many programs.
                 </p> */}
             </section>
-            <section className="container mx-auto md:mb-16 mb-10">
-                <SuccessStoriesContent />
+
+            <section className="container mx-auto mb-10">
+                <FaqAccordion />
             </section>
         </main>
     );
