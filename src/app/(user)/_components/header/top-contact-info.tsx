@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { PiPhoneCallLight } from 'react-icons/pi';
+import LoginMenu from './login-menu';
 import MobileNavMenu from './mobile-nav-menu';
 
 export default function TopContactInfo() {
@@ -43,7 +44,6 @@ export default function TopContactInfo() {
                         </div>
                     </Link>
                 </li>
-
                 {/* <li>
                     <Link
                         href={`mailto:${'⁠b2winitiative@gmail.com'}`}
@@ -78,6 +78,8 @@ export default function TopContactInfo() {
                         </div>
                     </Link>
                 </li> */}
+
+                <LoginMenu />
             </ul>
             {/* menu button section  */}
             <section className="md:hidden ">
